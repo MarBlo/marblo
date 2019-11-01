@@ -1,6 +1,6 @@
 baseurl = "/"
 languageCode = "en-us"
-title = "Hugo Future Imperfect"
+title = "mb's Imperfect Site"
 theme = "hugo-future-imperfect"
 preserveTaxonomyNames = true
 paginate = 3
@@ -23,8 +23,8 @@ canonifyURLs = true
   # Sets navbarTitle to match the section of the website
   dynamicTitles        = true
   # Sets RSS icons to appear on the sidebar with the social media buttons
-  rssAppearAtTop       = true
-  rssAppearAtBottom    = true
+  rssAppearAtTop       = false
+  rssAppearAtBottom    = false
   # Sets Social Media icons to appear on the sidebar
   socialAppearAtTop    = true
   socialAppearAtBottom = true
@@ -43,14 +43,14 @@ canonifyURLs = true
   # Sets Social Share links to appear on posts
   socialShare          = true
   # Sets specific share to appear on posts (default behavior is to appear)
-  socialShareTwitter   = true
+  socialShareTwitter   = false
   socialShareGoogleplus = false
   socialShareFacebook  = false
   socialShareReddit    = false
   socialShareLinkedin  = false
   socialShareStumbleupon = false
   socialSharePinterest = false
-  socialShareEmail     = true
+  socialShareEmail     = false
 
   # Load custom CSS or JavaScript files. The variable is an array so that you
   # can load multiple files if necessary. You can also load the standard theme
@@ -87,11 +87,11 @@ canonifyURLs = true
   # These are optional params related to the sidebar. They are recommended, but not
   # required for proper functionality. HTML is supported within the params.
 [params.intro]
-  header    = "Hugo Future Imperfect"
+  header    = "mb 's Imperfect Site"
 
-  paragraph = "Another fine responsive site template by <a href=\"http://html5up.net\">HTML5 UP</a>. Ported by Julio Pescador with some extra goodies <i class='fa fa-hand-peace-o'></i>"
+  paragraph = ""
 
-  about     = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tellus lacus, auctor vehicula molestie quis, tempor quis velit. Quisque in quam ac leo efficitur vulputate. Phasellus ullamcorper aliquam sodales. Maecenas sit amet condimentum ipsum. Proin sit amet ligula elit. Mauris."
+  about     = "mentum ipsum. Proin sit amet ligula elit. Mauris."
 
   # This appears at the top of the sidebar above params.intro.header.
   # A width of less than 100px is recommended from a design perspective.
@@ -151,7 +151,7 @@ canonifyURLs = true
 # and socialAppearAtBottom.
 [social]
   # Coding Communities
-  github           = "jpescador/hugo-future-imperfect"
+  github           = ""
   gitlab           = ""
   stackoverflow    = "" # User Number
   bitbucket        = ""
@@ -159,22 +159,22 @@ canonifyURLs = true
   codepen          = ""
   # Visual Art Communities
   deviantart       = ""
-  flickr           = "example"
+  flickr           = ""
   behance          = ""
   dribbble         = ""
   # Publishing Communities
   wordpress        = ""
   medium           = ""
   # Professional/Business Oriented Communities
-  linkedin         = "example"
-  linkedin_company = "examplebusiness"
+  linkedin         = ""
+  linkedin_company = ""
   foursquare       = ""
   xing             = ""
   slideshare       = ""
   # Social Networks
-  facebook         = "example"
+  facebook         = ""
   googleplus       = ""
-  reddit           = "example"
+  reddit           = ""
   quora            = ""
   youtube          = ""
   vimeo            = ""
@@ -182,18 +182,18 @@ canonifyURLs = true
     # WeChat and QQ need testing.
     wechat         = ""
     qq             = "" # User ID Number
-  instagram        = "example"
+  instagram        = ""
   tumblr           = ""
-  twitter          = "example"
+  twitter          = "true"
   skype            = ""
   snapchat         = ""
-  pinterest        = "example"
-  telegram         = "example"
+  pinterest        = ""
+  telegram         = ""
   vine             = ""
   googlescholar    = ""
   orcid            = ""
-  researchgate     = "example"
+  researchgate     = ""
   # Email
-  email            = "example"
+  email            = "true"
 
 
