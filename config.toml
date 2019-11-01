@@ -11,11 +11,15 @@ pluralizeListTitles = false
 enableRobotsTXT = true
 canonifyURLs = true
 
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+relativeURLS = true 
+enableEmoji = true
+
 [params]
   # Sets the meta tag description
   description          = "HTML5 UP theme, Future Imperfect with some extra goodies, ported by Julio Pescador. Powered by Hugo"
   # Sets the navbarTitle that appears in the top left of the navigation bar
-  navbarTitle          = "Future Imperfect"
+  navbarTitle          = "mb's Imperfect Site"
   # Sets where "View More Posts" links
   viewMorePostLink     = "/blog/"
 
@@ -87,8 +91,7 @@ canonifyURLs = true
   # These are optional params related to the sidebar. They are recommended, but not
   # required for proper functionality. HTML is supported within the params.
 [params.intro]
-  header    = "mb 's Imperfect Site"
-
+  header    = ""
   paragraph = ""
 
   about     = "mentum ipsum. Proin sit amet ligula elit. Mauris."

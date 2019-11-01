@@ -11,12 +11,12 @@
 /*
 #site-header {background-color: #242627;}
 */
-#site-header {background-color: #FF0000;}
+#site-header {background-color: #242627;}
   #site-header a {color: #FF0000;}
-  #site-header a:hover {color: #FF0000;}
+  #site-header a:hover {color: #FFFF00;}
 
 #site-nav .nav-title a {color: #FF0000;} 
-  #site-nav .nav-title a:hover {color: #FF0000;}
+  #site-nav .nav-title a:hover {color: #FFFF00;}
   
 /* Main Content Area Styling */
 
@@ -24,6 +24,14 @@
   background-color: #F8F9F9;
   font-family: 'Comfortaa', cursive;
 }
+
+#wrapper #header h1 a {
+  color: #FF0000;
+  text-transform: lowercase;
+  font-size: 25px;
+  color: #000000;
+}
+
 
 .pagination .button {
   color: #929292;
