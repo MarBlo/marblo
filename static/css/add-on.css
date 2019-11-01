@@ -1,0 +1,60 @@
+/*
+  This css file is for individual users to restyle items for their personal site,
+  or for the implementation of features specifically for their site. Anything that
+  is an official part of the theme (ex. Pull Requests) should be included in main.css
+  within the formating given.
+*/
+/* Top Navigation Styles */
+
+@import url("https://fonts.googleapis.com/css?family=Comfortaa&display=swap");
+
+/*
+#site-header {background-color: #242627;}
+*/
+#site-header {background-color: #FF0000;}
+  #site-header a {color: #FF0000;}
+  #site-header a:hover {color: #FF0000;}
+
+#site-nav .nav-title a {color: #FF0000;} 
+  #site-nav .nav-title a:hover {color: #FF0000;}
+  
+/* Main Content Area Styling */
+
+#wrapper {
+  background-color: #F8F9F9;
+  font-family: 'Comfortaa', cursive;
+}
+
+.pagination .button {
+  color: #929292;
+  border-color: #929292;
+  }
+  .pagination .button:hover,
+  article.post .button:hover {
+    color: #ff0053 !important;
+    border-color: #ff0053;
+  }
+
+article.post{
+  background-color: #FDFEFE;
+  border-radius: 5px 15px 5px 5px;
+  font-family: 'Comfortaa', cursive;
+  }
+  article.post .button {
+    margin: 10px 5px 15px;
+    text-align: right;
+  }
+
+.hljs, 
+code {
+  background: #fbfbfc;
+  border-radius: 5px;
+  border: 1px solid #929292;
+  color: #404148;
+  }
+  .hljs:hover, code:hover {border: 1px solid #ff0053;}
+
+/* MCA Links and Hover Styles */
+
+.content p a {color: #ff6295;} /* color change for links in post paragraphs */
+  .content p a:hover {color: #ff0053;}
