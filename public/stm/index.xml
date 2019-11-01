@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Stm on mb&#39;s Imperfect Site</title>
+    <link>/stm/</link>
+    <description>Recent content in Stm on mb&#39;s Imperfect Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 01 Nov 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/stm/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>STM_1</title>
+      <link>/stm/stm-1/</link>
+      <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/stm/stm-1/</guid>
+      <description>Das ist STM</description>
+    </item>
+    
+    <item>
+      <title>STM_2</title>
+      <link>/stm/stm-2/</link>
+      <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/stm/stm-2/</guid>
+      <description>Das ist aus STM_2</description>
+    </item>
+    
+  </channel>
+</rss>
