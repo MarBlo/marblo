@@ -94,7 +94,7 @@ enableEmoji = true
   header    = ""
   paragraph = ""
 
-  about     = "mentum ipsum. Proin sit amet ligula elit. Mauris."
+  about     = "mb's: hauptsächlich zur eigenen Referenz und zur Dokumentation"
 
   # This appears at the top of the sidebar above params.intro.header.
   # A width of less than 100px is recommended from a design perspective.
@@ -104,8 +104,8 @@ enableEmoji = true
     circle    = true
     # Sets Image to be Future Imperfect's hexagon
     imperfect = false
-    width     = '200px'
-    alt       = "Hugo Future Imperfect"
+    width     = '250px'
+    alt       = "mb's imperfect site"
 
 [params.postAmount]
 # Sets the number of recent posts to show in the sidebar. The default value is 5.

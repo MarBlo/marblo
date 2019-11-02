@@ -12,21 +12,13 @@
     
     
     <item>
-      <title>STM_1</title>
+      <title>Einrichten der Seite</title>
       <link>/stm/stm-1/</link>
       <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>/stm/stm-1/</guid>
-      <description>Das ist STM</description>
-    </item>
-    
-    <item>
-      <title>STM_2</title>
-      <link>/stm/stm-2/</link>
-      <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/stm/stm-2/</guid>
-      <description>Das ist aus STM_2</description>
+      <description>Einführung Nachdem ich schon im letzen Jahr mich mit dem Gedanken beschäftigt habe, eine Webseite aufzubauen, möchte ich das nun in diesem Winter (2019&amp;frasl;2020) umsetzen. In den letzten Tagen habe ich hauptsächlich bei gohugo nach einem passenden Theme gesucht. Es sollte folgende features haben:
+ Schlicht und nicht zu fancy Soll gut aussehen und fürs Bloggen geeignet sein Auf der Website sollte eine Suche nach in Blogs verwendeten Begriffen möglich sein Sollte kompatibel mit R Markdown sein Die Einbindung von Präsentationen sollte möglich sein  Ich habe in eine ganze Reihe von Demos reingeschaut, von denen die meisten sehr gut aussehen.</description>
     </item>
     
     <item>
