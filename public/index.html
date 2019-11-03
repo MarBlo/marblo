@@ -11,8 +11,8 @@
              "@id": "\/"
         },
         "articleSection" : "",
-        "name" : "mb\x27s Imperfect Site",
-        "headline" : "mb\x27s Imperfect Site",
+        "name" : "mb`s",
+        "headline" : "mb`s",
         "description" : "",
         "inLanguage" : "en",
         "author" : "",
@@ -30,7 +30,7 @@
     </script>
         
             
-                <title>mb&#39;s Imperfect Site</title>
+                <title>mb`s</title>
             
         
 
@@ -38,6 +38,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="generator" content="Hugo 0.59.0" />
         
+  
+    
+  
+
+  
+
+  <link rel="apple-touch-icon-precomposed" href='./favicon/apple-touch-icon-precomposed.png'>
+  
+  <link rel="icon" type="png" href="./img/main/favicon_I.png">
+  
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content='/favicon/mstile.png'>
+  <meta name="application-name" content="mb`s">
+  <meta name="msapplication-tooltip" content="HTML5 UP theme, Future Imperfect with some extra goodies, ported by Julio Pescador. Powered by Hugo">
+  <meta name="msapplication-config" content='/favicon/ieconfig.xml'>
+
 
 
         
@@ -48,11 +64,11 @@
         
 
         <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="mb&#39;s Imperfect Site"/>
+<meta name="twitter:title" content="mb`s"/>
 <meta name="twitter:description" content="HTML5 UP theme, Future Imperfect with some extra goodies, ported by Julio Pescador. Powered by Hugo"/>
 <meta name="twitter:site" content="@true"/>
 
-        <meta property="og:title" content="mb&#39;s Imperfect Site" />
+        <meta property="og:title" content="mb`s" />
 <meta property="og:description" content="HTML5 UP theme, Future Imperfect with some extra goodies, ported by Julio Pescador. Powered by Hugo" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="/" />
@@ -63,7 +79,7 @@
         <meta property="og:image:type" content="image/png">
         <meta property="og:image:width" content="512">
         <meta property="og:image:height" content="512">
-        <meta itemprop="name" content="mb&#39;s Imperfect Site">
+        <meta itemprop="name" content="mb`s">
 <meta itemprop="description" content="HTML5 UP theme, Future Imperfect with some extra goodies, ported by Julio Pescador. Powered by Hugo">
 
 
@@ -625,7 +641,7 @@ untergebracht wird und auch eine Veränderung in <em>themes/cupper/layouts/_defa
   When you use a theme cloned from its git repository, do not edit the theme’s files directly. Instead, theme customization in Hugo is a matter of overriding the templates made available to you in a theme. This provides the added flexibility of tweaking a theme to meet your needs while staying current with a theme’s upstream.</p>
 </blockquote>
 
-<p>Nachdem Logo an der richtigen Stelle abgelegt ist, muss noch in der
+<p>Nachdem das Logo an der richtigen Stelle abgelegt ist, muss noch in der
 <em>config.toml</em> ein Verweis auf den Speicherort gemacht werden:</p>
 
 <pre><code class="language-yaml">  [params.intro.pic]
@@ -641,6 +657,15 @@ untergebracht wird und auch eine Veränderung in <em>themes/cupper/layouts/_defa
 <p>Funktioniert tadellos.</p>
 
 <p>Das Logo selbst habe ich in <a href="https://sketch.io/sketchpad/">sketch.io</a> gmeacht und bin auch dort auf den Schrifttyp <strong>Comfortaa</strong> gestoßen.</p>
+
+<h2 id="favicon-für-tab">Favicon für Tab</h2>
+
+<p>Das <em>favicon</em> ist im <em>future-imperfect-theme</em> unter <code>layouts/partials/favicon.html</code> definiert. Diese <em>html</em> habe ich in den Ordner <code>layouts/partials</code> kopiert und die Zeile</p>
+
+<pre><code class="language-html">&lt;link rel=&quot;icon&quot; type=&quot;png&quot; href=&quot;/img/main/favicon_I.png&quot;&gt;
+</code></pre>
+
+<p>eingefügt. Damit ist Verweis auf den Speicherort des <em>favicons</em> gemacht.</p>
 
 <h2 id="neuer-font-einbinden">Neuer Font einbinden</h2>
 
@@ -669,6 +694,13 @@ font-family: 'Comfortaa', cursive;
 <p>der font für die gesamte Seite definiert.</p></li>
 </ol>
 
+<h2 id="andere-kleinigkeiten">Andere Kleinigkeiten</h2>
+
+<ol>
+<li>Ausschalten von <em>Disqus</em>
+einfach in <em>config.toml</em> über <code>disqusShortname = &quot;&quot;</code></li>
+</ol>
+
 <h1 id="gute-links">Gute Links</h1>
 
 <ul>
@@ -677,6 +709,8 @@ font-family: 'Comfortaa', cursive;
 <li><a href="https://alison.rbind.io/talk/2019-rsc-blogdown/">Alison Hill: Meet Blogdown</a></li>
 <li><a href="https://alison.rbind.io/post/2017-06-12-up-and-running-with-blogdown/">Alison Hill: Up and Running Blogdown</a></li>
 <li><a href="https://aurora-mareviv.github.io/talesofr/2017/08/r-blogdown-setup-in-github/">R Blogdown Setup: Gute Hinweise zu fonts einbinden</a></li>
+<li><a href="https://ulyngs.github.io/oxforddown/rmd-basics.html">R Markdown Basics</a></li>
+<li><a href="https://aurora-mareviv.github.io/talesofr/2017/08/r-blogdown-setup-in-github/">Aurora-Mareviv</a></li>
 </ul>
 
   </div>
@@ -716,29 +750,6 @@ font-family: 'Comfortaa', cursive;
   </footer>
 
 </article>
-
-    <article class="post">
-        <div id="disqus_thread"></div>
-<script type="application/javascript">
-    var disqus_config = function () {
-    
-    
-    
-    };
-    (function() {
-        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-            return;
-        }
-        var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "shortname" + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-    </article>
 
 
 <ul class="actions pagination">
@@ -1285,7 +1296,7 @@ font-family: 'Comfortaa', cursive;
       
         &copy; 2019
         
-          mb&#39;s Imperfect Site
+          mb`s
         
       .
       Powered by <a href="//gohugo.io" target="_blank">Hugo</a>
@@ -1312,6 +1323,8 @@ font-family: 'Comfortaa', cursive;
         <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
         <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/yaml.min.js"></script>
         <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/css.min.js"></script>
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/python.min.js"></script>
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/html.min.js"></script>
         <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
       
     

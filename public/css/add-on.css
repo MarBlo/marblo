@@ -65,3 +65,15 @@ code {
 
 .content p a {color: #ff6295;} /* color change for links in post paragraphs */
   .content p a:hover {color: #ff0053;}
+
+
+/*mb: Entfernen einer gepunkteten Linie unter dem Logo */
+a {
+  border-bottom: dotted 0px;
+}
+/*mb: Abstand zwischen erstem mini-Post und der Linie drüber*/
+#sidebar > * {
+    border-top: solid 1px rgba(160, 160, 160, 0.3);
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
