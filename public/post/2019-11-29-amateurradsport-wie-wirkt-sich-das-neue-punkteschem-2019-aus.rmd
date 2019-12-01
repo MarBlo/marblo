@@ -1,0 +1,72 @@
+---
+title: 'Amateurradsport: Wie wirkt sich das neue Punkteschema 2019 aus?'
+author: Martin
+date: '2019-11-29'
+draft: true
+slug: amateurradsport-wie-wirkt-sich-das-neue-punkteschem-2019-aus
+categories:
+  - bicycling
+tags:
+  - bicycling
+  - R
+description: ''
+featured: bycicle.jpg
+featuredalt: ''
+featuredpath: date
+linktitle: ''
+type: post
+---
+
+# Amateurradsport
+
+In der breiten Öffentlichkeit ist der Radsport im besten Fall mit den Namen von Profis verknüpft. Die
+Leistungen eines _Tour de France_ -Siegers sind immens und für die Zeit, in der die Profiradsportler
+im Sommer in Mittelpunkt stehen, vergißt der geneigte Sportinteressent alles, was ansonsten in der breiten
+Diskussion steht. Die 3 Wochen im Hochsommer sind für den gesamten Radsport wichtig, da mit dem
+Interesse an solchen Großereignissen sich neue Sportbegeisterte finden lassen.
+
+Wie viele andere Sportarten auch, hat sich der Radsport in den letzten Jahren sehr gewandelt. Man hat
+den Eindruck, dass es zwar immer weniger Kinder gibt, die in frühen Jahren Interesse am Radsport
+zeigen und in eine für viele Jahre dauernde _Ausbildung_ oder besser Hinführung zum Leistungssport
+einsteigen. Dafür gibt es aber eine immer größere Zahl junger Erwachsener, die erst später auf der
+Suche nach geeigneten und herausfordernden Sportarten auf den Radsport aufmerksam geworden sind.
+
+Aus bestimmten Gründen, die sich nicht unmittelbar erschließen, haben diese Späteinsteiger einen
+Boom bei den _Jedermann_ -Rennen ausgelöst. Um diesen Sportlern auch den Weg in den Lizenz-Rennsport
+zu ermöglichen hat der **BDR** (Bund Deutscher Radfahrer) in Rahmen einer umfangreichen Reform des
+Systems rund um Ausschreibung
+
+oirehohre
+
+# hf
+
+ugvqeriou
+
+## ier8
+
+![](/img/2019/Rank2018_19_2.svg)
+ irhoegh erogeh goir gorequg oreqgu oqrg qerog eqroigh
+ qeroigh erqoihg qeroigh erqoighqg qeroih grhoirehg heqrogih hhhrf oihreöoiq foeir foerif oeriuf äqeorugf eäroi gerieärqg er
+ qoreg oerzgoerzg oewrzg werogz roeig oirgh ortihg owirtg wortig wrotig 
+ qhergoih gerqoigh reqogi qer oho eru er9 rree erhg ureh grh
+ greh grh ihioe vore forie foeir foeri foeir foeir fgoeri gfoerigoerig oerig oergzoergzoerzg er8zg oriegzoiezrgoiergoewzrog eowrg oerigoiegr 
+
+qohrgre geqüroigh reqhgüoeqrh ghoerqugh hqerüouhg oeqrgh qergouhe qrhgiuh qerough qergooqerhg qerüogih rqeguoreqhg ureqough uoqoehrg ooqhrg
+
+<div class = "row">
+  
+<div class = "col-md-4">
+<br><br>Since R Markdown use the [bootstrap framework](https://getbootstrap.com/docs/4.0/layout/grid/) under the hood. It is possible to benefit its powerful grid system. Basically, you can consider that your row is divided in 12 subunits of same width. You can then choose to use only a few of this subunits.
+</div>
+  
+<div class = "col-md-4">
+<br><br>Here, I use 3 subunits of size 4 (4x3=12). The last column is used for a plot. You can read more about the grid system [here](bootstrap grid system). I got this result showing the following code in my R Markdown document.
+</div>
+  
+<div class = "col-md-4">
+``{r, message=FALSE, echo=FALSE}
+ggplot( mtcars, aes(x=mpg)) + geom_histogram(fill="skyblue", alpha=0.5) + theme_minimal()
+``
+</div>
+</div>
+

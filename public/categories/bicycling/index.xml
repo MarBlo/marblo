@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bicycling on mb`s</title>
+    <link>/categories/bicycling/</link>
+    <description>Recent content in bicycling on mb`s</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 29 Nov 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/bicycling/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Amateurradsport: Wie wirkt sich das neue Punkteschema 2019 aus?</title>
+      <link>/post/amateurradsport-wie-wirkt-sich-das-neue-punkteschem-2019-aus/</link>
+      <pubDate>Fri, 29 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/amateurradsport-wie-wirkt-sich-das-neue-punkteschem-2019-aus/</guid>
+      <description>.grid { display: grid; grid-gap: 10px; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); } .griddiv:first-child { grid-column: span 2; }  Amateurradsport In der breiten Öffentlichkeit ist der Radsport im besten Fall mit den Namen von Profis verknüpft. Die Leistungen eines Tour de France -Siegers sind immens und für die Zeit, in der die Profiradsportler im Sommer in Mittelpunkt stehen, vergißt der geneigte Sportinteressent alles, was ansonsten in der breiten Diskussion steht.</description>
+    </item>
+    
+  </channel>
+</rss>
