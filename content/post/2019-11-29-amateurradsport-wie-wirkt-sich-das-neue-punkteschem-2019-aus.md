@@ -110,17 +110,19 @@ fährt.
 
 <div class="grid">
   <div> 
-  Die Frage, die man sich nach einer komplette Saison mit den neuen Punktesystem stelle kann, ist:<br> <span style="font-weight:bold; font-size: 1.1em;">Hat das neue Punktesystem zu einer grundsätzlichen Veränderung in der Rangliste geführt?</span>
-  <br>
-  Um das zu beurteilen, ist nach der oben beschriebenen <span style="font-weight:bold; font-size: 1.2em;">neuen</span> Rangliste, die keine Profis (außer KT) mehr umfasst und nur die für Amateure relevanten Kategorien berücksichtigt, ein Ranking für die beiden letzten Jahre gemacht worden. Für jeden Fahrer, der in 2019 unter den ersten 500 war ist eine Linie eingetragen worden, die seinen Rang zwischen 2018 und 2019 verknüpft.
-
+  Die Frage, die man sich nach einer kompletten Saison mit dem neuen Punktesystem stellen kann, ist:
+  <br><br> <span style="font-weight:bold; font-size: 1.1em;">Hat das neue Punktesystem zu einer grundsätzlichen Veränderung in der Rangliste geführt?</span>
+  <br><br>
+  Kann es also sein, dass das neue System einen bestimmten Fahrertyp - etwa einen Fahrer, der überwiegend Strassenrennen fährt, oder einen, der sich auf Kriterien spezialisiert hat - bevorteilt.
+  Um das zu beurteilen, ist nach der oben beschriebenen <span style="font-weight:bold; font-size: 1.2em;">neuen</span> Rangliste, die keine Profis (außer KT) mehr umfasst und nur die für Amateure relevanten Kategorien berücksichtigt, ein Ranking für die beiden letzten Jahre gemacht worden. Für jeden Fahrer, der 2019 unter den <span style="font-weight:bold; font-size: 1.2em;">Top 800</span> war ist eine Linie eingetragen worden, die seinen Rang zwischen 2018 und 2019 verbindet.
 
 </div>
-  <div><img src="/img/2019/Rank2018_19_3.svg"></div>
+  <div><img src="/img/2019/Rank2018_19_4_w65_h14.svg"></div>
 </div>
 
----
-urgqieur qrehug reqohugeq ergh erhgorhg eroqhg hoqrigh qerogih erigheoirhg qoerihg qeroiqe iqoeirhg 
+
+urgqieur qrehug reqohugeq ergh erhgorhg eroqhg hoqrigh qerogih erigheoirhg qoerihg qeroiqe iqoeirhg
+
 ![](/img/2019/Rank2018_19_2.svg)
 
 
