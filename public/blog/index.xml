@@ -6,19 +6,10 @@
     <description>Recent content in Blog on mb`s</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 01 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jul 2015 21:13:14 -0500</lastBuildDate>
     
 	<atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Amateure</title>
-      <link>/blog/amateure/</link>
-      <pubDate>Sun, 01 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/amateure/</guid>
-      <description>.grid { display: flex; } .col-1-2 { flex: 1; } .cole-1-2:last-child { margin-left: 20px; }  Amateurradsport In der breiten Öffentlichkeit ist der Radsport im besten Fall mit den Namen von Profis verknüpft. Die Leistungen eines Tour de France -Siegers sind immens und für die Zeit, in der die Profiradsportler im Sommer in Mittelpunkt stehen, vergißt der geneigte Sportinteressent alles, was ansonsten in der breiten Diskussion steht. Die 3 Wochen im Hochsommer sind für den gesamten Radsport wichtig, da mit dem Interesse an solchen Großereignissen sich neue Sportbegeisterte finden lassen.</description>
-    </item>
     
     <item>
       <title>Hello R Markdown</title>

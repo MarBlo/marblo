@@ -1,8 +1,8 @@
 ---
-title: 'Amateurradsport: Wie wirkt sich das neue Punkteschema 2019 aus?'
+title: 'Amateurradsport: Das neue Punkteschema 2019?'
 author: Martin
 date: '2019-11-29'
-draft: false
+draft: true
 slug: amateurradsport-wie-wirkt-sich-das-neue-punkteschem-2019-aus
 categories:
   - bicycling
@@ -107,6 +107,19 @@ fährt.
 
 ---
 
+
+<div class="grid">
+  <div> 
+  Die Frage, die man sich nach einer komplette Saison mit den neuen Punktesystem stelle kann, ist:<br> <span style="font-weight:bold; font-size: 1.1em;">Hat das neue Punktesystem zu einer grundsätzlichen Veränderung in der Rangliste geführt?</span>
+  <br>
+  Um das zu beurteilen, ist nach der oben beschriebenen <span style="font-weight:bold; font-size: 1.2em;">neuen</span> Rangliste, die keine Profis (außer KT) mehr umfasst und nur die für Amateure relevanten Kategorien berücksichtigt, ein Ranking für die beiden letzten Jahre gemacht worden. Für jeden Fahrer, der in 2019 unter den ersten 500 war ist eine Linie eingetragen worden, die seinen Rang zwischen 2018 und 2019 verknüpft.
+
+
+</div>
+  <div><img src="/img/2019/Rank2018_19_3.svg"></div>
+</div>
+
+---
 urgqieur qrehug reqohugeq ergh erhgorhg eroqhg hoqrigh qerogih erigheoirhg qoerihg qeroiqe iqoeirhg 
 ![](/img/2019/Rank2018_19_2.svg)
 
