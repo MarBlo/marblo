@@ -15,7 +15,9 @@
   #site-header a {color: #FF0000;}
   #site-header a:hover {color: #FFFF00;}
 
-#site-nav .nav-title a {color: #FF0000;} 
+#site-nav .nav-title a {
+  color: #FF0000;
+} 
   #site-nav .nav-title a:hover {color: #FFFF00;}
   
 /* Main Content Area Styling */
@@ -28,8 +30,10 @@
 #wrapper #header h1 a {
   color: #FF0000;
   text-transform: lowercase;
+  font-family: 'Comfortaa', cursive;
   font-size: 25px;
   color: #000000;
+  margin: 0px 0px 0px 120px;
 }
 
 
@@ -79,7 +83,7 @@ a {
 }
 
 h1, .h1, h2, .h2, h3, .h3 {
-  margin-top: 20px;
+  margin-top: 2px;
 }
 
 .image.featured img{
