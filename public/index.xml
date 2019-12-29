@@ -13,10 +13,10 @@
     
     <item>
       <title>Amateurradsport ist mehr ...</title>
-      <link>/post/amateurradsport-ist-mehr/</link>
+      <link>/blog/amateurradsport-ist-mehr/</link>
       <pubDate>Sat, 28 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/amateurradsport-ist-mehr/</guid>
+      <guid>/blog/amateurradsport-ist-mehr/</guid>
       <description>#responsive-image { width: 50%; height: auto; } #fixed-width-flamingo { width: 500px; } aside { float: right; color: blue; } .grid { display: grid; grid-gap: 10px; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); } .griddiv:first-child { grid-column: span 1; }   function resizeIframe(obj) { obj.style.height = obj.contentWindow.document.body.scrollHeight + &#39;px&#39;; }  &amp;hellip; als was? Im Gegensatz zu fast allen Amateursportarten ist der von Amateuren betriebene Strassenradsport zu einem beträchtlichen Teil aus dem Blickwinkel des allgemein Sportinteressierten verschwunden.</description>
     </item>
     

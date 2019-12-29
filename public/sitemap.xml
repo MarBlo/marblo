@@ -3,7 +3,12 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/post/amateurradsport-ist-mehr/</loc>
+    <loc>/blog/amateurradsport-ist-mehr/</loc>
+    <lastmod>2019-12-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/bicycling/</loc>
     <lastmod>2019-12-28T00:00:00+00:00</lastmod>
   </url>
   
@@ -13,7 +18,7 @@
   </url>
   
   <url>
-    <loc>/categories/bicycling/</loc>
+    <loc>/blog/</loc>
     <lastmod>2019-12-28T00:00:00+00:00</lastmod>
   </url>
   
@@ -28,17 +33,22 @@
   </url>
   
   <url>
-    <loc>/post/</loc>
-    <lastmod>2019-12-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/</loc>
     <lastmod>2019-12-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
+    <loc>/about/</loc>
+    <lastmod>2019-12-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/post/amateurradsport-wie-wirkt-sich-das-neue-punkteschema-2019-aus/</loc>
+    <lastmod>2019-11-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
     <lastmod>2019-11-29T00:00:00+00:00</lastmod>
   </url>
   
@@ -93,11 +103,6 @@
   </url>
   
   <url>
-    <loc>/blog/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/blog/2015-07-23-r-rmarkdown/</loc>
     <lastmod>2015-07-23T21:13:14-05:00</lastmod>
   </url>
@@ -135,11 +140,6 @@
   <url>
     <loc>/tags/tutorial/</loc>
     <lastmod>2014-09-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/about/</loc>
-    <lastmod>2014-04-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
