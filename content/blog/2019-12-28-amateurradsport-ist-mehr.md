@@ -13,7 +13,7 @@ featured: bycicle.jpg
 featuredalt: bycicle
 featuredpath: date
 linktitle: ''
-type: blog
+type: post
 ---
 
 <style>
