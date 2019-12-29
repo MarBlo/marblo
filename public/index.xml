@@ -21,6 +21,15 @@
     </item>
     
     <item>
+      <title>Rangliste</title>
+      <link>/apps/apprangliste/</link>
+      <pubDate>Sat, 28 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/apps/apprangliste/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
       <title>Amateurradsport: Das neue Punkteschema 2019?</title>
       <link>/post/amateurradsport-wie-wirkt-sich-das-neue-punkteschema-2019-aus/</link>
       <pubDate>Fri, 29 Nov 2019 00:00:00 +0000</pubDate>
@@ -37,15 +46,6 @@
       <guid>/stm/stm-1/</guid>
       <description>Einführung Nachdem ich schon im letzen Jahr mich mit dem Gedanken beschäftigt habe, eine Webseite aufzubauen, möchte ich das nun in diesem Winter (2019&amp;frasl;2020) umsetzen. In den letzten Tagen habe ich hauptsächlich bei gohugo nach einem passenden Theme gesucht. Es sollte folgende features haben:
  Schlicht und nicht zu fancy Soll gut aussehen und fürs Bloggen geeignet sein Auf der Website sollte eine Suche nach in Blogs verwendeten Begriffen möglich sein Sollte kompatibel mit R Markdown sein Die Einbindung von Präsentationen sollte möglich sein  Ich habe in eine ganze Reihe von Demos reingeschaut, von denen die meisten sehr gut aussehen.</description>
-    </item>
-    
-    <item>
-      <title>Rangliste</title>
-      <link>/apps/apprangliste/</link>
-      <pubDate>Thu, 22 Jun 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/apps/apprangliste/</guid>
-      <description> </description>
     </item>
     
     <item>
