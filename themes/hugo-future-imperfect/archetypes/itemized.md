@@ -2,6 +2,7 @@
 author = ""
 categories = [""]
 date = ""
+draft = 'true'
 description = ""
 featured = ""
 featuredalt = ""
