@@ -3,6 +3,7 @@ author: Hugo author
 categories:
 - Hugo
 date: "2014-04-02"
+draft: true
 description: ""
 featured: pic01.jpg
 featuredalt: Pic 1

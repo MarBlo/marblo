@@ -3,6 +3,7 @@ author: Unknown Author
 categories:
 - Go
 date: "2014-04-02"
+draft: true
 description: ""
 featured: pic02.jpg
 featuredalt: Pic 2

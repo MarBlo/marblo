@@ -3,6 +3,7 @@ author: Theme author
 categories:
 - Hugo
 date: "2014-09-28"
+draft: true
 description: Learn how to create a theme on Hugo
 featured: pic03.jpg
 featuredalt: Pic 3

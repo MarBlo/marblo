@@ -3,42 +3,47 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/post/amateurradsport-ist-mehr/</loc>
+    <lastmod>2019-12-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/bicycling/</loc>
+    <lastmod>2019-12-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/bicycling/</loc>
+    <lastmod>2019-12-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <lastmod>2019-12-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2019-12-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2019-12-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2019-12-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/post/amateurradsport-wie-wirkt-sich-das-neue-punkteschema-2019-aus/</loc>
     <lastmod>2019-11-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/bicycling/</loc>
-    <lastmod>2019-11-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/bicycling/</loc>
-    <lastmod>2019-11-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/</loc>
-    <lastmod>2019-11-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/</loc>
-    <lastmod>2019-11-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/</loc>
-    <lastmod>2019-11-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/r/</loc>
-    <lastmod>2019-11-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
     <lastmod>2019-11-29T00:00:00+00:00</lastmod>
   </url>
   
@@ -160,6 +165,11 @@
   <url>
     <loc>/blog/migrate-from-jekyll/</loc>
     <lastmod>2014-03-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/stm/2019-11-01-stm-1/</loc>
+    <priority>0</priority>
   </url>
   
   <url>

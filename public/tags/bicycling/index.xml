@@ -6,10 +6,19 @@
     <description>Recent content in bicycling on mb`s</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 29 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 28 Dec 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/bicycling/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Amateurradsport ist mehr ...</title>
+      <link>/post/amateurradsport-ist-mehr/</link>
+      <pubDate>Sat, 28 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/amateurradsport-ist-mehr/</guid>
+      <description>#responsive-image { width: 50%; height: auto; } #fixed-width-flamingo { width: 500px; } aside { float: right; color: blue; } .grid { display: grid; grid-gap: 10px; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); } .griddiv:first-child { grid-column: span 1; }   function resizeIframe(obj) { obj.style.height = obj.contentWindow.document.body.scrollHeight + &#39;px&#39;; }  &amp;hellip; als was? Im Gegensatz zu fast allen Amateursportarten ist der von Amateuren betriebene Strassenradsport zu einem beträchtlichen Teil aus dem Blickwinkel des allgemein Sportinteressierten verschwunden.</description>
+    </item>
     
     <item>
       <title>Amateurradsport: Das neue Punkteschema 2019?</title>
@@ -17,7 +26,7 @@
       <pubDate>Fri, 29 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>/post/amateurradsport-wie-wirkt-sich-das-neue-punkteschema-2019-aus/</guid>
-      <description>.grid { display: grid; grid-gap: 10px; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); } .griddiv:first-child { grid-column: span 2; }   function resizeIframe(obj) { obj.style.height = obj.contentWindow.document.body.scrollHeight + &#39;px&#39;; }  Amateurradsport In der breiten Öffentlichkeit ist der Radsport im besten Fall mit den Namen von Profis verknüpft. Die Leistungen eines Tour de France -Siegers sind immens und für die Zeit, in der die Profiradsportler im Sommer in Mittelpunkt stehen, vergißt der geneigte Sportinteressent alles, was ansonsten in der breiten Diskussion steht.</description>
+      <description>#responsive-image { width: 50%; height: auto; } #fixed-width-flamingo { width: 500px; } aside { float: right; color: blue; } .grid { display: grid; grid-gap: 10px; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); } .griddiv:first-child { grid-column: span 1; }   function resizeIframe(obj) { obj.style.height = obj.contentWindow.document.body.scrollHeight + &#39;px&#39;; }  Amateurradsport In der breiten Öffentlichkeit ist der Radsport im besten Fall mit den Namen von Profis verknüpft. Die Leistungen eines Tour de France -Siegers sind immens und für die Zeit, in der die Profiradsportler im Sommer in Mittelpunkt stehen, vergißt der Sportinteressent alles, was ansonsten in der breiten Diskussion steht.</description>
     </item>
     
   </channel>
