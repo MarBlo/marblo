@@ -138,8 +138,8 @@ relativeURLS = true
   weight = 4
 
 [[menu.main]]
-  name = "Itemized"
-  url = "/itemized/"
+  name = "Apps"
+  url = "/apps/"
   identifier = "fa fa-list"
   weight = 5
 
