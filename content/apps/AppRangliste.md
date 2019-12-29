@@ -2,16 +2,20 @@
 author: ''
 categories: ""
 date: "2017-06-22"
-draft: true
+draft: false
 description: Application for doing cool things.
+categories:
+  - bicycling
+tags:
+  - bicycling
 featured: ""
 featuredalt: ""
-featuredpath: ""
+featuredpath: date
 format: ''
 link: ''
 linktitle: ""
 title: Rangliste
-type: apps
+type: post
 ---
 
 <iframe width='100%' height='1000' src='https://marblo.shinyapps.io/RL_II/' allowfullscreen></iframe> 

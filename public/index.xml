@@ -41,6 +41,15 @@
     
     <item>
       <title>Rangliste</title>
+      <link>/apps/apprangliste/</link>
+      <pubDate>Thu, 22 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/apps/apprangliste/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
+      <title>Rangliste</title>
       <link>/itemized/item1/</link>
       <pubDate>Thu, 22 Jun 2017 00:00:00 +0000</pubDate>
       
