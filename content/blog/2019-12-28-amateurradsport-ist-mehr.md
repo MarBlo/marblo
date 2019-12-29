@@ -135,7 +135,4 @@ nicht mehr 2019 in die Rangliste geschafft haben _Oldies_ genannt und links als 
 Statt einzelner Fahrer kann man auch Teams auswählen, wobei sich dann ein Team aus allen <span style="font-weight:bold;
 font-size: 1.2em;">Amateur-Teams</span> auswählen lässt. Hier ist bewusst auf die Auswahl von Profiteams verzichtet worden.
 
-
-
-
-<!-- <iframe width='100%' height='1000' src='https://marblo.shinyapps.io/RL_II/' allowfullscreen></iframe>  -->
+<iframe width='100%' height='1000' src='https://marblo.shinyapps.io/RL_II/' allowfullscreen></iframe> 
