@@ -62,7 +62,7 @@ vielmehr gezeigt werden, dass er eine breitere Aufmerksamkeit verdient.
 > + ein 80 Wörter umfassender Bericht über ein Rennen
 > + das sehr spärliche Übertragen großer Amateurrennen in den dritten Länderprogrammen
 >   (Veranstaltungen wie das Strassenrennen in Überherrn, Saarland oder in Schönaich, Baden-Württemberg, sind rühmliche Ausnahmen.
->   Mann kann den jeweiligen dritten Programme <span style="font-weight:bold; font-size: 1.2em;">SR</span> und <span
+>   Man kann den jeweiligen dritten Programmen <span style="font-weight:bold; font-size: 1.2em;">SR</span> und <span
 >   style="font-weight:bold; font-size: 1.2em;">SWR</span> nicht dankbar genug sein, einmal im Jahr einen Beitrag über die
 >   Rennen zu senden.)
 > 
@@ -88,11 +88,12 @@ Daten spielen auch im Radsport eine bedeutende Rolle. Die Messung _wer fährt al
 Punkteschema bewertet und fließen so in einen übergeordneten Datenpool, aus dem eine Rangliste entsteht.
 
 Seit der Saison 2019 wird dieser Rangliste eine größere Bedeutung zugemessen als in den Jahren davor. Während in den
-Jahren bis 2019 die Rangliste eine nette, aber relativ bedeutungslose Datensammlung war, wird sie jetzt zwei Mal im
-Jahr für die Entscheidung herangezogen, in welcher Klasse ein Amateurrennfahrer fährt. Während es bei Profis keine
-Einteilung in Klassen gibt, müssen Amateure sich immer einem <span style="font-weight:bold; font-size: 1.2em;">Cut</span>
-unterwerfen, der sie entweder in die höhere <span style="font-weight:bold; font-size: 1.2em;">Elite-Amateur-Klasse</span> oder 
-die niedrigere <span style="font-weight:bold; font-size: 1.2em;">Amateur-Klasse</span> einordnet. 
+Jahren bis 2019 die Rangliste eine nette, aber relativ bedeutungslose Datensammlung war, wird sie jetzt drei Mal im
+Jahr für die Entscheidung herangezogen, in welcher Klasse ein Amateurrennfahrer fährt. Bereits im Jahr 2020 wird ein
+weiterer Stichtag hinzukommen. 
+Während es bei Profis keine Einteilung in Klassen gibt, müssen Amateure sich immer einem <span style="font-weight:bold;
+font-size: 1.2em;">Cut</span> unterwerfen, der sie entweder in die höhere <span style="font-weight:bold; font-size:
+1.2em;">Elite-Amateur-Klasse</span> oder die niedrigere <span style="font-weight:bold; font-size: 1.2em;">Amateur-Klasse</span> einordnet. 
 
 > Im folgenden wird häufig als Sammelbegriff für Fahrer aller Amateurklassen die Begriffe 
 > <span style="font-weight:bold; font-size: 1.2em;">Amateurfahrer</span> oder <span style="font-weight:bold; font-size:

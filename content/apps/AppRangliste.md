@@ -8,8 +8,8 @@ categories:
   - bicycling
 tags:
   - bicycling
-featured: ""
-featuredalt: ""
+featured: bycicle.jpg
+featuredalt: bycicle
 featuredpath: date
 format: ''
 link: ''
