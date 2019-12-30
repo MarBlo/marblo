@@ -9,6 +9,7 @@ categories:
 tags:
   - bicycling
 description: 'Radsport, Amateure, Profis, Rangliste'
+keywords: 'Radsport, Amateure, Profis, Rangliste'
 featured: bycicle.jpg
 featuredalt: bycicle
 featuredpath: date

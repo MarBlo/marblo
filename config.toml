@@ -18,7 +18,7 @@ relativeURLS = true
 
 [params]
   # Sets the meta tag description
-  description          = "HTML5 UP theme, Future Imperfect with some extra goodies, ported by Julio Pescador. Powered by Hugo"
+  description          = "Radsport, Amateure, Profis, Rangliste"
   # Sets the navbarTitle that appears in the top left of the navigation bar
   navbarTitle          = "mb`s"
   # Sets where "View More Posts" links
