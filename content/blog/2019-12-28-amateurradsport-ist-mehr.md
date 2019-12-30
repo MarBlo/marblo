@@ -3,7 +3,7 @@ title: Amateurradsport ist mehr ...
 author: Martin
 date: '2019-12-28'
 draft: false
-slug: amateurradsport-ist-mehr
+slug: amateurradsport-radsport-rangliste-amateure-profis
 categories:
   - bicycling
 tags:
