@@ -8,7 +8,7 @@ categories:
   - bicycling
 tags:
   - bicycling
-description: ''
+description: 'Radsport, Amateure, Profis, Rangliste'
 featured: bycicle.jpg
 featuredalt: bycicle
 featuredpath: date
