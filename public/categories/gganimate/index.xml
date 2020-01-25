@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>gganimate on mb`s</title>
+    <link>/categories/gganimate/</link>
+    <description>Recent content in gganimate on mb`s</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 04 Jan 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/gganimate/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Rolling Bar Chart Race with gganimate</title>
+      <link>/stm/rolling-bar-chart-race-with-gganimate/</link>
+      <pubDate>Sat, 04 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/stm/rolling-bar-chart-race-with-gganimate/</guid>
+      <description>Rolling Bar Chart Race Diese Art der dynamischen Darstellung schien mir gut geeignet zu sein, um die Veränderungen unter den Topx im Laufe einer Saison darzustellen. Inspiration und gute Hinweise habe ich über die beiden Seiten emilykuehler und towardsdatascience bekommen.
+Die Dynamik soll dadurch entstehen, dass die Topx sich wöchentlich ändern. Daraus entsteht die Notwendigkeit, für jede Woche für ALLE Fahrer ein neues Ranking zu erstellen und daraus die Topx zu filtern.</description>
+    </item>
+    
+  </channel>
+</rss>

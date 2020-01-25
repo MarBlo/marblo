@@ -6,10 +6,21 @@
     <description>Recent content in Hugo on mb`s</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 28 Sep 2014 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 01 Jan 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/hugo/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Tagebuch</title>
+      <link>/stm/tagebuch/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/stm/tagebuch/</guid>
+      <description>Tagebuch über Hugo, Ideen und alles Mögliche SEO 1.1.2020:
+Nachdem die Site seit 3 Tagen veröffentlicht ist, kann sie immer noch nicht über den bei google über site:marblo.netlify.com gefunden werden.
+ Heute in public/robot.txt die folgende Zeile eingefügt: Sitemap: https://marblo.netlify.com/sitemap_location.xml was hier beschrieben wird Auch gelesen, dass es durchaus ein paar Tage dauern kann, bis die Seite von Google gecrawlt wurde Nächste Aktion wäre dann noch in config.toml den languangeCode zu ändern.</description>
+    </item>
     
     <item>
       <title>Creating a New Theme</title>

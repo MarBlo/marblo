@@ -6,10 +6,19 @@
     <description>Recent content in Blog on mb`s</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 28 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 10 Jan 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Rangliste Amateure 2019</title>
+      <link>/blog/amateurradsport-radsport-rangliste-amateure/</link>
+      <pubDate>Fri, 10 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/amateurradsport-radsport-rangliste-amateure/</guid>
+      <description>ggg  #responsive-image { width: 50%; height: auto; } #fixed-width-flamingo { width: 500px; } aside { float: right; color: blue; } .grid { display: grid; grid-gap: 10px; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); } .griddiv:first-child { grid-column: span 1; }   You must replace meowmeowmeow with your personal API key.  Ea eiusmod cupidatat aute sint labore dolore velit. Nostrud excepteur eu irure exercitation est aliquip aliqua ex. Sunt duis pariatur irure ipsum excepteur veniam.</description>
+    </item>
     
     <item>
       <title>Amateurradsport ist mehr ...</title>

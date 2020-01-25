@@ -6,27 +6,30 @@
     <description>Recent content in stm on mb`s</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 30 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 04 Jan 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/stm/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Aufbau der Site</title>
-      <link>/aufbau-der-site/</link>
-      <pubDate>Mon, 30 Dec 2019 00:00:00 +0000</pubDate>
+      <title>Rolling Bar Chart Race with gganimate</title>
+      <link>/stm/rolling-bar-chart-race-with-gganimate/</link>
+      <pubDate>Sat, 04 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>/aufbau-der-site/</guid>
-      <description> Aufbau der Seite </description>
+      <guid>/stm/rolling-bar-chart-race-with-gganimate/</guid>
+      <description>Rolling Bar Chart Race Diese Art der dynamischen Darstellung schien mir gut geeignet zu sein, um die Veränderungen unter den Topx im Laufe einer Saison darzustellen. Inspiration und gute Hinweise habe ich über die beiden Seiten emilykuehler und towardsdatascience bekommen.
+Die Dynamik soll dadurch entstehen, dass die Topx sich wöchentlich ändern. Daraus entsteht die Notwendigkeit, für jede Woche für ALLE Fahrer ein neues Ranking zu erstellen und daraus die Topx zu filtern.</description>
     </item>
     
     <item>
-      <title>Aufbau der Site</title>
-      <link>/post/aufbau-der-site/</link>
-      <pubDate>Mon, 30 Dec 2019 00:00:00 +0000</pubDate>
+      <title>Tagebuch</title>
+      <link>/stm/tagebuch/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/aufbau-der-site/</guid>
-      <description> Aufbau der Seite </description>
+      <guid>/stm/tagebuch/</guid>
+      <description>Tagebuch über Hugo, Ideen und alles Mögliche SEO 1.1.2020:
+Nachdem die Site seit 3 Tagen veröffentlicht ist, kann sie immer noch nicht über den bei google über site:marblo.netlify.com gefunden werden.
+ Heute in public/robot.txt die folgende Zeile eingefügt: Sitemap: https://marblo.netlify.com/sitemap_location.xml was hier beschrieben wird Auch gelesen, dass es durchaus ein paar Tage dauern kann, bis die Seite von Google gecrawlt wurde Nächste Aktion wäre dann noch in config.toml den languangeCode zu ändern.</description>
     </item>
     
     <item>
@@ -35,7 +38,9 @@
       <pubDate>Mon, 30 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>/stm/aufbau-der-site/</guid>
-      <description> Aufbau der Seite </description>
+      <description>Aufbau der Seite Der Umgang mit der website wird durch die eigentliche Datenanalyse, die außerhalb des blogdown-Projekts gemacht wird, sehr schnell sehr groß. Eine gewisse Dokumentation ist deshalb notwendig.
+Die gesamte website ist direkt unter Dokumente mit dem Namen marblo.netlify.com zu finden. Hier findet man das eigentliche blogdown-Projekt, das marblo heißt, als auch die anderen R-Projekte, die zur Daten- und Plotaufbereitung dienen.
+Das Blogdown Projekt Die einzelnen Datenprojekte Keines der hier aufgeführten Projekte sollte ohne genaue Prüfung gelöscht werden.</description>
     </item>
     
     <item>

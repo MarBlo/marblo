@@ -6,27 +6,49 @@
     <description>Recent content on mb`s</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 30 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 22 Jan 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Aufbau der Site</title>
-      <link>/aufbau-der-site/</link>
-      <pubDate>Mon, 30 Dec 2019 00:00:00 +0000</pubDate>
+      <title>How to add interactive plots to a Blog post</title>
+      <link>/stm/how-to-add-interactive-plots-to-a-blog-post/</link>
+      <pubDate>Wed, 22 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>/aufbau-der-site/</guid>
-      <description> Aufbau der Seite </description>
+      <guid>/stm/how-to-add-interactive-plots-to-a-blog-post/</guid>
+      <description>Einiges gelernt zu Responsiveness und plot_ly Für den zweiten Post wollte ich einige interacktive Elemente wie zum Beispiel DT::dataframe() oder plot_ly bzw ggplotlyeinsetzen, und bin dabei auf einige Überraschungen gestoßen - habe aber auch extrem viel gelernt.
+Ausgangspunkt ist die phantastische Seite von Alison Presman Hills. Die Seite, aif der es um htmlwidgets geht, versuche ich im Folgenden nachzubauen.</description>
     </item>
     
     <item>
-      <title>Aufbau der Site</title>
-      <link>/post/aufbau-der-site/</link>
-      <pubDate>Mon, 30 Dec 2019 00:00:00 +0000</pubDate>
+      <title>Rangliste Amateure 2019</title>
+      <link>/blog/amateurradsport-radsport-rangliste-amateure/</link>
+      <pubDate>Fri, 10 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/aufbau-der-site/</guid>
-      <description> Aufbau der Seite </description>
+      <guid>/blog/amateurradsport-radsport-rangliste-amateure/</guid>
+      <description>ggg  #responsive-image { width: 50%; height: auto; } #fixed-width-flamingo { width: 500px; } aside { float: right; color: blue; } .grid { display: grid; grid-gap: 10px; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); } .griddiv:first-child { grid-column: span 1; }   You must replace meowmeowmeow with your personal API key.  Ea eiusmod cupidatat aute sint labore dolore velit. Nostrud excepteur eu irure exercitation est aliquip aliqua ex. Sunt duis pariatur irure ipsum excepteur veniam.</description>
+    </item>
+    
+    <item>
+      <title>Rolling Bar Chart Race with gganimate</title>
+      <link>/stm/rolling-bar-chart-race-with-gganimate/</link>
+      <pubDate>Sat, 04 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/stm/rolling-bar-chart-race-with-gganimate/</guid>
+      <description>Rolling Bar Chart Race Diese Art der dynamischen Darstellung schien mir gut geeignet zu sein, um die Veränderungen unter den Topx im Laufe einer Saison darzustellen. Inspiration und gute Hinweise habe ich über die beiden Seiten emilykuehler und towardsdatascience bekommen.
+Die Dynamik soll dadurch entstehen, dass die Topx sich wöchentlich ändern. Daraus entsteht die Notwendigkeit, für jede Woche für ALLE Fahrer ein neues Ranking zu erstellen und daraus die Topx zu filtern.</description>
+    </item>
+    
+    <item>
+      <title>Tagebuch</title>
+      <link>/stm/tagebuch/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/stm/tagebuch/</guid>
+      <description>Tagebuch über Hugo, Ideen und alles Mögliche SEO 1.1.2020:
+Nachdem die Site seit 3 Tagen veröffentlicht ist, kann sie immer noch nicht über den bei google über site:marblo.netlify.com gefunden werden.
+ Heute in public/robot.txt die folgende Zeile eingefügt: Sitemap: https://marblo.netlify.com/sitemap_location.xml was hier beschrieben wird Auch gelesen, dass es durchaus ein paar Tage dauern kann, bis die Seite von Google gecrawlt wurde Nächste Aktion wäre dann noch in config.toml den languangeCode zu ändern.</description>
     </item>
     
     <item>
@@ -35,7 +57,9 @@
       <pubDate>Mon, 30 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>/stm/aufbau-der-site/</guid>
-      <description> Aufbau der Seite </description>
+      <description>Aufbau der Seite Der Umgang mit der website wird durch die eigentliche Datenanalyse, die außerhalb des blogdown-Projekts gemacht wird, sehr schnell sehr groß. Eine gewisse Dokumentation ist deshalb notwendig.
+Die gesamte website ist direkt unter Dokumente mit dem Namen marblo.netlify.com zu finden. Hier findet man das eigentliche blogdown-Projekt, das marblo heißt, als auch die anderen R-Projekte, die zur Daten- und Plotaufbereitung dienen.
+Das Blogdown Projekt Die einzelnen Datenprojekte Keines der hier aufgeführten Projekte sollte ohne genaue Prüfung gelöscht werden.</description>
     </item>
     
     <item>

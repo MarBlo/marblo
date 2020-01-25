@@ -1,0 +1,269 @@
+---
+title: How to add interactive plots to a Blog post
+author: ''
+date: '2020-01-22'
+draft: true
+slug: how-to-add-interactive-plots-to-a-blog-post
+categories: []
+tags:
+  - R Markdown
+description: ''
+featured: ''
+featuredalt: ''
+featuredpath: ''
+linktitle: ''
+type: post
+---
+
+# Einiges gelernt zu Responsiveness und plot_ly
+
+Für den zweiten Post wollte ich einige interacktive Elemente wie zum Beispiel `DT::dataframe()` oder
+`plot_ly` bzw `ggplotly`einsetzen, und bin dabei auf einige Überraschungen gestoßen - habe aber auch
+extrem viel gelernt.
+
+Ausgangspunkt ist die phantastische Seite von [Alison Presman Hills](https://blogdown-demo.rbind.io/).
+Die Seite, aif der es um [htmlwidgets](https://blogdown-demo.rbind.io/2017/09/07/adding-htmlwidgets-to-r-markdown-posts/) geht, versuche ich im Folgenden nachzubauen. 
+
+Der englische Text ist der Originaltext, der so bleibt wie er ist, wenn alles wie erwartet geklappt hat. 
+Probleme, Verbesserung oder Änderungen werden von mir auf Deutsch gemacht.
+
++ Die Verwendung von footnotes^[etwa so] über `text^[footnote]`
+
+## Das Setzen von global Options
+
+Zu dem was von _Alison_ vorgeschlagen wurde, habe ich noch `widgetframe_isolate_widgets = TRUE` hinzugefügt,
+das zu dem package `widgetFrame` gehört und später bei dem Einbinden von interaktiven Elementen noch 
+eine große Rolle spielen wird. Der genaue Grund für diesen Befehl ist mir nicht klar und auch nach 
+Lesen der Vignette nicht klar geworden.
+
+Außerdem habe ich die Größe der in den codeChunks eingefügten Bilder eingestellt, obwohl 
+[Alison/Yihu](https://bookdown.org/yihui/blogdown/dep-path.html) schreiben, dass das nicht zu empfehlen 
+ist. Ich habe aber gemerkt, dass es einfacher ist, die Größer der interaktiven Elemente in einem
+codeChunk einzufügen, wenn die _chunk_opts_ etwas großzügiger gewählt werden. Man kann dann nämlich 
+in dem codeChunk die Größe verkleinern, könnte sie aber nicht über das in den _chunk_opts_ gemachten
+Angaben hinaus vergößern.
+
+
+```{r setup, include = TRUE}
+knitr::opts_chunk$set(comment = NA, tidy = FALSE, warning = FALSE, message = FALSE,
+                      echo = TRUE, widgetframe_isolate_widgets = TRUE,
+                      fig.width=6, fig.height=10)
+```
+
+
+Das wird hier in dem folgenden _codeChunk_ schon angewendet, indem die _fig.height_ aus den _chunk_opts_ 
+überschrieben wird. Würde man das nicht tun, würde zuviel Leerraum hinter dem Map entstehen.
+
+```{r leaflet-01, fig.height= 6}
+  library(leaflet)
+  library(widgetframe)
+  l <- leaflet() %>% addTiles() %>% setView(0,0,1)
+  frameWidget(l, width='90%')
+```
+
+
+
+```{r}
+library(dplyr)
+library(tidyr)
+library(DT)
+library(ggplot2)
+library(plotly)
+anscombe_tidy <- anscombe %>%
+    mutate(observation = seq_along(x1)) %>%
+    gather(key, value, -observation) %>%
+    separate(key, c("variable", "set"), 1, convert = TRUE) %>%
+    mutate(set = as.character(as.roman(set))) %>%
+    spread(variable, value) %>%
+    arrange(set)
+#head(anscombe_tidy)
+```
+
+
+
+Now that it has been reshaped, we can view and plot Anscombe's quartet in our post.
+
+
+# Example 1: DataTables via the **DT** package
+
+We can interactively view the tidied Anscombe's quartet using the **DT** package:
+
+```{r}
+anscombe_tidy %>% 
+datatable(rownames = FALSE, 
+          options = list(
+            pageLength = 11, 
+            autoWidth = TRUE, 
+            columnDefs = list(list(
+              className = 'dt-left', 
+              targets = 0),
+              list(className = 'dt-center', targets = 1))))
+```
+
+
+Das geht so nicht, wie man sehen kann. Es gibt für das hier benutzte Hugo-Theme offentichtlich ein 
+Problem mit jQuery, das mit DT interferiert wie es in [langer, guter Post, siehe auch unten](https://github.com/rstudio/blogdown/issues/88) beschrieben wird. Die dort gemachten Vorschläge
+waren mir aber zu umfangreich und kompliziert.
+
+Nach etwas Suchen bin ich auf das package _widgetframe_ von [Karambelkar](https://bhaskarvk.github.io/widgetframe/articles/widgetframe_and_knitr.html) gestoßen, 
+- s.a. [Karambelkar](https://cran.r-project.org/web/packages/widgetframe/vignettes/widgetframe_and_knitr.html) - das auf Anhieb gut funkioniert und DT auch responsive darstellt.
+
+```{r}
+library(tidyverse)
+library(DT)
+frameWidget(DT::datatable(anscombe_tidy))
+```
+
+Später wird noch einmal auf das Einbinden einer _DT_ mit einem _iframe_ eingegangen.
+
+# ggplotly
+
+```{r}
+library(tidyverse)
+cols <- c("#0072B2", "#009E73", "#D55E00", "#CC79A7")
+ans_plot <- ggplot(anscombe_tidy, aes(x, y, colour = set)) +
+  geom_point(size = 3, alpha = .7) +
+  geom_smooth(method = "lm", se = FALSE) + 
+  facet_wrap(~ set) +
+  theme_bw() +
+  theme(legend.position="none") +
+  scale_colour_manual(values = cols) 
+
+print(ggplotly(ans_plot))
+```
+
+Das funktioniert so nicht, egal ob mit oder ohne `print`. Aber mit _frameWidget_ klappt es wieder.
+
+
+```{r}
+frameWidget(ggplotly(ans_plot))
+```
+
+Funktioniert. Allerdings ist der Plot noch viel Platz nach unten. Hier ist in dem _codeChunk_ die 
+Höhe des Plots nicht neu definiert worden. Das kann man allerdings auch in dem _frameWidget_ direkt 
+machen, wie man an dem folgenden Beispiel sieht.
+
+
+```{r dygraph-01}
+library(dygraphs)
+ts <- dygraph(nhtemp, main = "New Haven Temperatures")
+frameWidget(ts, height = 350, width = '95%')
+```
+
+funktioniert auch
+
+# frameWidget mit langem ggplot Code
+
+Dient auch dazu, zu prüfen, wie lange die Seite lädt, wenn eine ganze Reihe an Sachen zu machen.
+Ich habe mittlerweile aber den dataFrame **tttA** in dem Projekt `animation_RanglisteFahrer/diagrammeFahrer.R` 
+hergestellt und abgespeichert. Damit entfällt die Rechnerei in dem Chunk. 
+
+Schwierig ist noch die das Einlesen des **.rds**. Die Datensätze liegen jetzt direkt unter _stm_ und 
+können direkt mit `readRDS('tttA')` aufgerufen werden. Das beduetet aber, dass wenn der Post umzieht, 
+zum Beispiel in _Blog_, dass dann auch die Datensätze mitgehen müssen.
+
+Der Versuch, einen zentrale Datenordner einzurichten und den über `here` anzusprechen, ist in einem ersten 
+Versuch gescheitert, muss aber laut [rbind](https://blogdown-demo.rbind.io/) eigentlich gehen. 
+**Noch einmal lesen!**
+
+
+```{r}
+# --- tttA kommt aus Proj animation_RanglisteFahrer/diagrammeFahrer.R
+tttA <- readRDS('tttA.rds')
+# --- irgendwie ist in dem tttA noch ein XCM-Kategorierennen dabei
+# --- Kirchzarten
+tttA <- tttA %>% filter(!str_detect(Kategorie, 'XCM'))
+pal <- readRDS('pal.rds')
+pp <- ggplot(tttA %>% mutate(Name = str_replace(Name,' ','\n')),
+             aes(week, Punkte, color = Team)) +
+  geom_col(aes(text = paste(Veranstaltun, '<br>', 
+                            'Platz ', Platz,
+                            'Punkte ', Punkte, '<br>',
+                            'Datum ', Datum))) +
+  scale_color_manual(values = pal) +
+  ylim(0,200) + xlim(10,40)+
+  labs(x='', y='', title = 'Title', subtitle = 'sub', caption = 'mb`s')+
+  facet_wrap(~Name, ncol=4)+
+  theme(legend.position = 'none',
+        strip.background = element_rect(size = 3),
+        axis.title.y = element_text(margin = margin(t = 0, r = 20, b = 0, l = 150)))
+pp
+
+pp_ly <- ggplotly(pp, tooltip = 'text') %>% 
+  layout(margin = list(l = 100, r = 20, b = 80, t = 90, pad = 0),
+         annotations =
+           list(x = 1, y = -0.05, #position of text adjust as needed
+                text = "@ mb`s",
+                showarrow = F, xref='paper', yref='paper',
+                xanchor='right', yanchor='auto', xshift=0, yshift=0,
+                font=list(size=10, color="gray")),
+         title= 'Top20 Amateure 2019: Punkte pro Woche'
+         )
+pp_ly
+```
+
+Auch hier funktioniert der interaktive Plot direkt nicht. Erst unter Zuhilfenehmen von
+_frameWidget_ geht es wieder problemlos.
+
+```{r}
+frameWidget(pp_ly, height = 1200, width = '100%')
+```
+
+Allerdings wird beim Übertrag in ein _plotly_-Objekt die Formatierung der _facets_ verhauen.
+Bei einem Test der **Responsiveness** durch Verkleinern der Breite des Screens auf die Breite eines
+Handys erkennt man auch, dass die überschrift zu groß ist.
+
+Da die Überschrift und vor allem die Facet-Titel so ohne weiteres als _plotly_-Objekt sich nicht
+verändern lassen, wird im Folgenden versucht, direkt mit `plot_ly` zu arbeiten.
+
+```{r}
+nam <- tttA %>% group_by(Name) %>% distinct(Name) %>% `[[`(1)
+pp_ly2 <- plot_ly(tttA %>% filter(Name == 'Simon Nuber'), hoverinfo ='skip') %>% 
+  add_bars(x = ~week, y = ~Punkte, type ='bar', 
+        text = ~paste0(Ort, '\n', Punkte), color = ~Ort, showlegend =FALSE, hoverinfo ='text') %>% 
+  layout(barmode = 'stack', title = 'Simn', xaxis = list(title ='Woche', range=c(9,41)))
+
+frameWidget(pp_ly2, height = 1200, width = '100%')
+```
+
+
+Funktioniert! Hier ist die Höhe des Plots auch nicht verändert und stellt somit die in _opts_chunk_ 
+definierten Größen dar.
+
+
+```{r}
+nam <- tttA %>% group_by(Name) %>% distinct(Name) %>% `[[`(1)
+plots <- lapply(as.character(nam[1:20]), function(x) {
+  plot_ly(tttA %>% filter(Name == x), hoverinfo ='skip') %>% 
+    add_bars(x = ~week, y = ~Punkte, type ='bar',
+          text = ~paste0(Ort, '\n', Punkte), color = ~Ort, showlegend =FALSE, hoverinfo ='text') %>% 
+    add_annotations(
+    text = x,
+    x = 0.02,
+    y = 1,
+    yref = "paper",
+    xref = "paper",
+    xanchor = "left",
+    yanchor = "top",
+    showarrow = FALSE,
+    font = list(size = 12)
+  ) %>% 
+    layout(barmode = 'stack', 
+           xaxis = list(title ='Woche', range=c(9,41), 
+                        titlefont = list(size =12),
+                        tickfont = list(size =9)),
+           yaxis = list(title = 'Punkte',
+                        titlefont = list(size = 12),
+                        tickfont = list(size =9)),
+           margin = list(r = 10, t = 25, b = 40, l = 10))
+})
+#htmltools::tagList(plots)
+```
+
+
+```{r}
+frameWidget(subplot(plots, nrows =10, shareX = TRUE, shareY = TRUE, margin = 0.01), height = 1200, width = '100%')
+```
+
+<iframe width='90%' height='500' src='/html/DT_Veranstaltungen_2019.html' allowfullscreen></iframe>
+

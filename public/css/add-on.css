@@ -86,7 +86,25 @@ h1, .h1, h2, .h2, h3, .h3 {
   margin-top: 2px;
 }
 
+/*mb: Höhe und Breite der Blog-Eingangsbilder*/
 .image.featured img{
   width: auto;
-  height: 300px; 
+  height: 200px; 
+}
+
+/* mb: images auf eine einheitliche Größe
+This will style any <img> element in .parent div */
+
+.parent img {
+  height: 50%;
+  width: 50%;
+}
+
+/*Breite der Sidebar, beeinflusst auch die Breite der rechten Seite
+zum Glück so, dass die breiter wird, wenn Sidebar schmaler.
+Default war 3em, 18em und 22em*/
+#sidebar {
+  margin-right: 1em;
+  min-width: 9em;
+  width: 16em;
 }
