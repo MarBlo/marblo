@@ -100,4 +100,3 @@ relevanten Daten und Definitionen enthalten**.
 
 > Hier besteht noch Verbesserungspotential und kann einiges zusammengeführt werden.
 
-

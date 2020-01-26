@@ -1,0 +1,185 @@
+---
+title: 'Rangliste Amateure 2019'
+author: Martin
+date: '2020-01-10'
+draft: false
+slug: amateurradsport-radsport-rangliste-amateure
+categories:
+  - bicycling
+  - R
+tags: []
+description: ''
+featured: ranking.png
+featuredalt: ranking
+featuredpath: date
+linktitle: ''
+type: post
+---
+
+
+<style>
+#responsive-image {  width: 50%;  height: auto; } 
+#fixed-width-flamingo {  width: 500px; } 
+
+
+aside {
+    float: right;
+    color: blue;
+    max-width: 500px;
+    font-size: 1ex;
+}
+
+</style>
+
+```{r setup, include = TRUE}
+knitr::opts_chunk$set(comment = NA, tidy = FALSE, warning = FALSE, message = FALSE,
+                      echo = TRUE, widgetframe_isolate_widgets = TRUE,
+                      fig.width=6, fig.height=10)
+```
+
+# Wo sind die Bilder?
+
+Für Eilige: Hier geht es zu den Diagrammen, Animationen und interaktiven Plots
+
++ [Animation Top20 Amateure](#Top20)
++ bqjbq
++ jdfbn
+
+
+
+# Die Amateur-Rangliste
+
+Die Rangliste des BDR umfasst alle Radrennfahrer mit einer deutschen Lizenz und bündelt der Ergebnisse eines Jahres in einer Rangliste. Dabei wird nicht zwischen Profis und Amateuren unterschieden, so dass sich Vertreter beider _Klassen_ in der Rangliste finden. Da auch Senioren neben ihren Seniorenrennen auch bei Rennen der Amateuren startberechtigt sind, kommen auch die mit in die Rangliste sobald sie sich bei einem Amateurrennen platziert haben. Sogar Junioren, die mit einer Sondergenehmigung bei solchen Rennen an den Start gehen dürfen, können dann bei entsprechender Platzierung in die Rangliste kommen.
+
+Profis, Senioren und Junioren haben alle neben der o.g. Rangliste ihre eigene Rangliste, die für sich sogar ausschlaggebender ist. 
+
+Es liegt also eigentlich nahe, dafür zu sorgen, dass die einzigen Fahrer, die sich im Laufe einer Saison einem Wettbewerb um Auf- oder Abstieg kümmern müssen, eine eigene Rangliste erhalten. Deshalb wird hier im Folgenden eine soche **Amateur-Rangliste** erstellt und in verschiedenen Formen ausgewertet.
+
+Das Vorhaben ist damit klar, das Vorgehen nicht unbedingt. Die Frage wer Amateur ist und wer Profi ist noch einfach zu beantworten. Die Frage, ob ein Senior oder Junior bei der Amateur-Rangliste mit berücksichtigt werden soll oder nicht, schon nicht mehr. Beide messen sich in den Rennen mit Amateuren und sind noch sehr aktive Rennfahrer, die _nur_ ihres Alters wegen Seniorenrennen fahren dürfen, oft aber auch noch wettbewerbsfähig bei Amateurrennen sind. Dass diese Seniorenfahrer mit in die Rangliste aufgenommen werden, ist also zu vertreten. 
+
+Bei den Junioren - von denen es wohl deutlich weniger Fahrer gibt, die mit einer Sondergenehmigung bei Amateurrennen starten dürfen, als es Senioren gibt, die das tun - kann man auch damit leben, dass die noch in der Rangliste ausgeführt werden, zumal sie ein Jahr später sowieso bei den Amateuren starten werden^[Man kann mit einer ähnlichen Argumentation natürlich auch sagen, dass die Profis sich auch in Rennen mit den Amateuren messen und damit in der Rangliste geführt werden sollen. Aber irgendwo muss ein Schnitt gemacht werden und der wird, was die die einzelnen Rennklassen angeht im Folgenden zwischen Profis (PT bis zu KT) auf der einen Seite und Amateuren (inklusive einiger Senioren und Junioren) auf der anderen Seite gemacht.].
+
+Es ist also etwas _Geschmackssache_.
+
+Das ist es auch, wenn es darum geht welche Rennen in der <span style="font-weight:bold; font-size: 1.2em;">Amateur-Rangliste</span> berücksichtigt werden soll. 
+
+## Die Top20 Amateure {#Top20}
+
+<aside>
+	Eventuell weiter nach unten scrollen. **Play** - Button drücken oder **Schieberegler** verwenden.
+</aside>
+
+
+<iframe width="100%" height="850" name="iframe" src="/html/Amateur_Rangliste_2019.html"></iframe>
+
+
+Plotly im Chunk
+
+
+```{r include=FALSE}
+library(tidyverse)
+library(plotly)
+library(widgetframe)
+top20_df <- readRDS('top20_df.rds')
+whatyouwant <- readRDS('whatyouwand.rds')
+ax <- list(
+  title = "",
+  zeroline = FALSE,
+  showline = FALSE,
+  ticktext = list('0', '500', '1000'), 
+  tickvals = list(0, 500, 1000),
+  range = c(-500, 1200),
+  tickmode = "array"
+  #showticklabels = FALSE,
+  #showgrid = FALSE
+)
+
+ay <- list(
+  title = "",
+  zeroline = FALSE,
+  showline = FALSE,
+  showticklabels = FALSE,
+  showgrid = FALSE,
+  autorange = 'reversed'
+)
+
+plotA <- top20_df %>% 
+  select(-c(Verein, c, RankInWeek, ordering, newOrder)) %>% 
+  group_by(week) %>% arrange(desc(SumInWeek)) %>% 
+  #filter(week == 40) %>% 
+  mutate(Rank = dense_rank(SumInWeek)) %>% 
+  mutate(text_df = ifelse(SumInWeek > 100, as.character(SumInWeek), '')) %>% 
+  mutate(team_df = ifelse(week == 40, Team, '')) %>% 
+  mutate(rangfolge = 1:20) %>% 
+  ungroup() %>% 
+  plot_ly(x = 0, xend = ~SumInWeek, frame = ~week,
+          color = ~Team, colors = whatyouwant,
+          showlegend = F, hoverinfo = 'none',
+          text = ~Name, text2 = ~SumInWeek,
+          width = 800, height = 750
+  ) %>% 
+  add_segments(y = ~rangfolge, yend = ~rangfolge, inherit = T, 
+               hoverinfo = 'none',
+               line = list(width =22)) %>% 
+  add_text(x = -450, y = ~rangfolge, inherit = T, 
+           #textposition = 'right',
+           ) %>% 
+  add_text(x = ~-45, y = ~rangfolge, inherit = F, 
+           hoverinfo ='none',
+           text = ~rangfolge, frame = ~week,
+           ) %>% 
+  add_text(x = ~SumInWeek - 80, y = ~rangfolge, inherit = T, 
+           hoverinfo = 'none',
+           text = ~text_df, textfont = list(
+            color = toRGB("white")
+           )
+           ) %>% 
+  add_text(x = ~10, y = ~rangfolge, inherit = T, 
+           hoverinfo = 'none',
+           text = ~team_df, textfont = list(
+            color = toRGB("white"),
+            size = 12
+           )
+           ) %>% 
+  layout(margin = list(l = 50, r = 20, b = 200, t = 30),
+         yaxis = ay, xaxis = ax,
+         annotations = 
+           list(x = .9, y = -.3, #position of text adjust as needed 
+                text = "@ mb`s", 
+                showarrow = F, xref='paper', yref='paper', 
+                xanchor='left', yanchor='auto', xshift=0, yshift=0,
+                font=list(size=10, color="gray"))) %>% 
+  animation_opts( 
+    frame = 1000,
+    transition = 750,
+    easing = "linear-in", redraw = T
+  ) %>% 
+  style(textposition = "right") %>% 
+  layout(title= paste('<b>', 'Amateur Rangliste 2019' ,'</b>'), font=t) %>% 
+  animation_slider(currentvalue = list(prefix = "Woche: ", font=list(color ='black'))) %>% 
+  config(displayModeBar = F)
+```
+
+```{r fig.width = 5}
+frameWidget(plotA,height = 1200, width = '90%')
+
+```
+
+
+
+<iframe width="100%" height="850" name="iframe" src="/html/Top20_plot_ly.html"></iframe>
+
+<iframe width="100%" height="800" name="iframe" src="/html/WochenInTopX_Fahrer.html"></iframe>
+
+
+<iframe width='100%' height='1000' src='https://marblo.shinyapps.io/RL_III/' allowfullscreen></iframe> 
+
+Nisi nostrud ad velit excepteur minim ea eu mollit ullamco Lorem voluptate ea. Tempor non do amet reprehenderit duis. Minim in excepteur occaecat in Lorem velit sunt. Esse minim nostrud ut culpa veniam cupidatat quis ea reprehenderit velit.
+
+<iframe width='100%' height='1000' src='/html/DT_Veranstaltungen_2019.html' allowfullscreen></iframe>
+
+
+
+<iframe width='40%' height='1000' src='/html/Balken_Woche_Fahrer.html' allowfullscreen></iframe> 
+
+<iframe width='40%' height='1000' src='/html/Balken_Woche_Fahrer.html' allowfullscreen onload="resizeIframe(this)></iframe> 

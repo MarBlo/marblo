@@ -1,0 +1,44 @@
+---
+title: Sublime, Markdown, Text, CSS und mehr
+author: ''
+date: '2020-01-26'
+slug: sublime-markdown-text-css-und-mehr
+categories: []
+tags: 
+  - Sublime
+  - Markdown
+description: ''
+featured: ''
+featuredalt: ''
+featuredpath: ''
+linktitle: ''
+type: post
+---
+
+# Sublime
+
+## Dictionary
+
+**25Jan2020**
+
+Mit der Anleitung aus diesm [Link](https://acapio.de/Computer/Software/Sublime_-_Add_language_dictionary/index.html) habe ich ein deutsches Wörterbuch eingebaut. Ein etwas länglicher aber einfacher Vorgang. 
+Dabei hat aber der Vorgang mit dem _zip_ en der Datei nicht so richtig funktioniert. Was dann funktioniert hat war, die Einrichtung eines Ordners über _Preferences_ --> _Browse Packages_ und dann in diesm Ordner einen Ordner mit dem Namen _Language-German_ erstellen und in diesen die beiden _.dic_ und _.aff_ files legen.
+
+Über `F6` kann man dann das <span style="font-weight:bold; font-size: 1.2em;">Dictionary</span> aktivieren.
+
+Noch zeigt das <span style="font-weight:bold; font-size: 1.2em;">Dictionary</span> aber auch alle Wörter mit Umlaut als Fehler an. 
+
+Dafür macht es aber auch Vorschläge, die wohl aus dem <span style="font-weight:bold; font-size: 1.2em;">Dictionary</span> kommen. 
+
+
+## Snippets
+
+**26Jan2020**
+
+In diesem Link [freeCodeCamp](https://www.freecodecamp.org/news/a-guide-to-preserving-your-wrists-with-sublime-text-snippets-7541662a53f2/) gibt es eine gute Erklärung zur Erstellung von <span style="font-weight:bold; font-size: 1.2em;">Snippets</span> an die ich mich gehalten haben.
+So habe ich zum Beispiel über das Kürzel `mkb` ein Snippet erstellt, um einen etwas größeren Text (1.2 em) zu erstellen. Dieses <span style="font-weight:bold; font-size: 1.2em;">Snippet</span> funktioniert genauso wie das in **VS Code**, allerdings mit einem anderen _Shortcut_.
+
+> **Wichtig** Bei der Erstellung des Snippets, muss man nur die Endung _sublime-snippet_ als Filebezeichnung eingeben und abspeichern. Das Snippet wird dann automatisch in `~/Library/Application Support/Sublime Text 3/Packages/User` abgelegt.
+
+> **Erstellen** eines neuen Snippets über _Tools_ --> _Developer_ --> _New Snippet_ .
+

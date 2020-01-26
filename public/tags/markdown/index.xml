@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Markdown on mb`s</title>
+    <link>/tags/markdown/</link>
+    <description>Recent content in Markdown on mb`s</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 26 Jan 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sublime, Markdown, Text, CSS und mehr</title>
+      <link>/stm/sublime-markdown-text-css-und-mehr/</link>
+      <pubDate>Sun, 26 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/stm/sublime-markdown-text-css-und-mehr/</guid>
+      <description>Sublime Dictionary 25Jan2020
+Mit der Anleitung aus diesm Link habe ich ein deutsches Wörterbuch eingebaut. Ein etwas länglicher aber einfacher Vorgang. Dabei hat aber der Vorgang mit dem zip en der Datei nicht so richtig funktioniert. Was dann funktioniert hat war, die Einrichtung eines Ordners über Preferences –&amp;gt; Browse Packages und dann in diesm Ordner einen Ordner mit dem Namen Language-German erstellen und in diesen die beiden .dic und .</description>
+    </item>
+    
+  </channel>
+</rss>
