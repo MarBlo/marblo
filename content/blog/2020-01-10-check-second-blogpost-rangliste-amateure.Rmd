@@ -2,7 +2,7 @@
 title: 'Rangliste Amateure 2019'
 author: Martin
 date: '2020-01-10'
-draft: false
+draft: true
 slug: amateurradsport-radsport-rangliste-amateure
 categories:
   - bicycling
