@@ -27,7 +27,7 @@ Mit der Anleitung aus diesm Link habe ich ein deutsches Wörterbuch eingebaut. E
       <pubDate>Wed, 22 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>/stm/how-to-add-interactive-plots-to-a-blog-post/</guid>
-      <description>Einiges gelernt zu Responsiveness und plot_ly Für den zweiten Post wollte ich einige interacktive Elemente wie zum Beispiel DT::dataframe() oder plot_ly bzw ggplotlyeinsetzen, und bin dabei auf einige Überraschungen gestoßen - habe aber auch extrem viel gelernt.
+      <description>function resizeIframe(obj) { obj.style.height = obj.contentWindow.document.body.scrollHeight + &#39;px&#39;; }   Einiges gelernt zu Responsiveness und plot_ly Für den zweiten Post wollte ich einige interacktive Elemente wie zum Beispiel DT::dataframe() oder plot_ly bzw ggplotlyeinsetzen, und bin dabei auf einige Überraschungen gestoßen - habe aber auch extrem viel gelernt.
 Ausgangspunkt ist die phantastische Seite von Alison Presman Hills. Die Seite, aif der es um htmlwidgets geht, versuche ich im Folgenden nachzubauen.</description>
     </item>
     

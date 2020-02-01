@@ -17,7 +17,7 @@
       <pubDate>Fri, 10 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>/blog/amateurradsport-radsport-rangliste-amateure/</guid>
-      <description>#responsive-image { width: 50%; height: auto; } #fixed-width-flamingo { width: 500px; } aside { float: right; color: blue; max-width: 500px; font-size: 1ex; }  knitr::opts_chunk$set(comment = NA, tidy = FALSE, warning = FALSE, message = FALSE, echo = TRUE, widgetframe_isolate_widgets = TRUE, fig.width=6, fig.height=10) Wo sind die Bilder? Für Eilige: Hier geht es zu den Diagrammen, Animationen und interaktiven Plots
+      <description>#responsive-image { width: 50%; height: auto; } #fixed-width-flamingo { width: 500px; } aside { float: right; color: blue; max-width: 500px; font-size: 1ex; }  Wo sind die Bilder? Für Eilige: Hier geht es zu den Diagrammen, Animationen und interaktiven Plots
  Animation Top20 Amateure bqjbq jdfbn   Die Amateur-Rangliste Die Rangliste des BDR umfasst alle Radrennfahrer mit einer deutschen Lizenz und bündelt der Ergebnisse eines Jahres in einer Rangliste.</description>
     </item>
     
@@ -29,17 +29,6 @@
       <guid>/stm/rolling-bar-chart-race-with-gganimate/</guid>
       <description>Rolling Bar Chart Race Diese Art der dynamischen Darstellung schien mir gut geeignet zu sein, um die Veränderungen unter den Topx im Laufe einer Saison darzustellen. Inspiration und gute Hinweise habe ich über die beiden Seiten emilykuehler und towardsdatascience bekommen.
 Die Dynamik soll dadurch entstehen, dass die Topx sich wöchentlich ändern. Daraus entsteht die Notwendigkeit, für jede Woche für ALLE Fahrer ein neues Ranking zu erstellen und daraus die Topx zu filtern.</description>
-    </item>
-    
-    <item>
-      <title>Hello R Markdown</title>
-      <link>/blog/2015-07-23-r-rmarkdown/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
-      
-      <guid>/blog/2015-07-23-r-rmarkdown/</guid>
-      <description>R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
-You can embed an R code chunk like this:
-summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
     </item>
     
   </channel>

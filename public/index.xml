@@ -27,7 +27,7 @@ Mit der Anleitung aus diesm Link habe ich ein deutsches Wörterbuch eingebaut. E
       <pubDate>Wed, 22 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>/stm/how-to-add-interactive-plots-to-a-blog-post/</guid>
-      <description>Einiges gelernt zu Responsiveness und plot_ly Für den zweiten Post wollte ich einige interacktive Elemente wie zum Beispiel DT::dataframe() oder plot_ly bzw ggplotlyeinsetzen, und bin dabei auf einige Überraschungen gestoßen - habe aber auch extrem viel gelernt.
+      <description>function resizeIframe(obj) { obj.style.height = obj.contentWindow.document.body.scrollHeight + &#39;px&#39;; }   Einiges gelernt zu Responsiveness und plot_ly Für den zweiten Post wollte ich einige interacktive Elemente wie zum Beispiel DT::dataframe() oder plot_ly bzw ggplotlyeinsetzen, und bin dabei auf einige Überraschungen gestoßen - habe aber auch extrem viel gelernt.
 Ausgangspunkt ist die phantastische Seite von Alison Presman Hills. Die Seite, aif der es um htmlwidgets geht, versuche ich im Folgenden nachzubauen.</description>
     </item>
     
@@ -37,7 +37,7 @@ Ausgangspunkt ist die phantastische Seite von Alison Presman Hills. Die Seite, a
       <pubDate>Fri, 10 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>/blog/amateurradsport-radsport-rangliste-amateure/</guid>
-      <description>#responsive-image { width: 50%; height: auto; } #fixed-width-flamingo { width: 500px; } aside { float: right; color: blue; max-width: 500px; font-size: 1ex; }  knitr::opts_chunk$set(comment = NA, tidy = FALSE, warning = FALSE, message = FALSE, echo = TRUE, widgetframe_isolate_widgets = TRUE, fig.width=6, fig.height=10) Wo sind die Bilder? Für Eilige: Hier geht es zu den Diagrammen, Animationen und interaktiven Plots
+      <description>#responsive-image { width: 50%; height: auto; } #fixed-width-flamingo { width: 500px; } aside { float: right; color: blue; max-width: 500px; font-size: 1ex; }  Wo sind die Bilder? Für Eilige: Hier geht es zu den Diagrammen, Animationen und interaktiven Plots
  Animation Top20 Amateure bqjbq jdfbn   Die Amateur-Rangliste Die Rangliste des BDR umfasst alle Radrennfahrer mit einer deutschen Lizenz und bündelt der Ergebnisse eines Jahres in einer Rangliste.</description>
     </item>
     
@@ -120,67 +120,30 @@ Das Blogdown Projekt Die einzelnen Datenprojekte Keines der hier aufgeführten P
     </item>
     
     <item>
-      <title>Hello R Markdown</title>
-      <link>/blog/2015-07-23-r-rmarkdown/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      <title></title>
+      <link>/blog/amateur_rangliste_2019/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/blog/2015-07-23-r-rmarkdown/</guid>
-      <description>R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
-You can embed an R code chunk like this:
-summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
+      <guid>/blog/amateur_rangliste_2019/</guid>
+      <description>(function() { // If window.HTMLWidgets is already defined, then use it; otherwise create a // new object. This allows preceding code to set options that affect the // initialization process (though none currently exist). window.HTMLWidgets = window.HTMLWidgets || {}; // See if we&#39;re running in a viewer pane. If not, we&#39;re in a web browser. var viewerMode = window.HTMLWidgets.viewerMode = /\bviewer_pane=1\b/.test(window.location); // See if we&#39;re running in Shiny mode.</description>
     </item>
     
     <item>
-      <title>Creating a New Theme</title>
-      <link>/blog/creating-a-new-theme/</link>
-      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      <title></title>
+      <link>/blog/frameableplota/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/blog/creating-a-new-theme/</guid>
-      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
-We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
+      <guid>/blog/frameableplota/</guid>
+      <description>plotly (function() { // If window.HTMLWidgets is already defined, then use it; otherwise create a // new object. This allows preceding code to set options that affect the // initialization process (though none currently exist). window.HTMLWidgets = window.HTMLWidgets || {}; // See if we&#39;re running in a viewer pane. If not, we&#39;re in a web browser. var viewerMode = window.HTMLWidgets.viewerMode = /\bviewer_pane=1\b/.test(window.location); // See if we&#39;re running in Shiny mode.</description>
     </item>
     
     <item>
-      <title>(Hu)go Template Primer</title>
-      <link>/blog/goisforlovers/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      <title></title>
+      <link>/blog/plota/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/blog/goisforlovers/</guid>
-      <description>Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in go templates.
-This document is a brief primer on using go templates.</description>
-    </item>
-    
-    <item>
-      <title>Getting Started with Hugo</title>
-      <link>/blog/hugoisforlovers/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/hugoisforlovers/</guid>
-      <description>&lt;h2 id=&#34;step-1-install-hugo&#34;&gt;Step 1. Install Hugo&lt;/h2&gt;
-
-&lt;p&gt;Go to &lt;a href=&#34;https://github.com/spf13/hugo/releases&#34;&gt;hugo releases&lt;/a&gt; and download the
-appropriate version for your os and architecture.&lt;/p&gt;
-
-&lt;p&gt;Save it somewhere specific as we will be using it in the next step.&lt;/p&gt;
-
-&lt;p&gt;More complete instructions are available at &lt;a href=&#34;./overview/installing/&#34;&gt;installing hugo&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Migrate to Hugo from Jekyll</title>
-      <link>/blog/migrate-from-jekyll/</link>
-      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/migrate-from-jekyll/</guid>
-      <description>&lt;h2 id=&#34;move-static-content-to-static&#34;&gt;Move static content to &lt;code&gt;static&lt;/code&gt;&lt;/h2&gt;
-
-&lt;p&gt;Jekyll has a rule that any directory not starting with &lt;code&gt;_&lt;/code&gt; will be copied as-is to the &lt;code&gt;_site&lt;/code&gt; output. Hugo keeps all static content under &lt;code&gt;static&lt;/code&gt;. You should therefore move it all there.
-With Jekyll, something that looked like&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;▾ &amp;lt;root&amp;gt;/
-    ▾ images/
-        logo.png
-&lt;/code&gt;&lt;/pre&gt;</description>
+      <guid>/blog/plota/</guid>
+      <description>plotly (function() { // If window.HTMLWidgets is already defined, then use it; otherwise create a // new object. This allows preceding code to set options that affect the // initialization process (though none currently exist). window.HTMLWidgets = window.HTMLWidgets || {}; // See if we&#39;re running in a viewer pane. If not, we&#39;re in a web browser. var viewerMode = window.HTMLWidgets.viewerMode = /\bviewer_pane=1\b/.test(window.location); // See if we&#39;re running in Shiny mode.</description>
     </item>
     
     <item>

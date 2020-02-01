@@ -16,7 +16,6 @@ linktitle: ''
 type: post
 ---
 
-
 <style>
 #responsive-image {  width: 50%;  height: auto; } 
 #fixed-width-flamingo {  width: 500px; } 
@@ -31,10 +30,14 @@ aside {
 
 </style>
 
-```{r setup, include = TRUE}
+```{r setup, include = TRUE, echo=FALSE, warning=FALSE, message=FALSE}
 knitr::opts_chunk$set(comment = NA, tidy = FALSE, warning = FALSE, message = FALSE,
-                      echo = TRUE, widgetframe_isolate_widgets = TRUE,
-                      fig.width=6, fig.height=10)
+                      echo = FALSE, widgetframe_isolate_widgets = TRUE,
+                      fig.width= 8, fig.height=10)
+
+library(tidyverse)
+library(plotly)
+library(widgetframe)
 ```
 
 # Wo sind die Bilder?
@@ -47,6 +50,7 @@ Für Eilige: Hier geht es zu den Diagrammen, Animationen und interaktiven Plots
 
 
 
+    
 # Die Amateur-Rangliste
 
 Die Rangliste des BDR umfasst alle Radrennfahrer mit einer deutschen Lizenz und bündelt der Ergebnisse eines Jahres in einer Rangliste. Dabei wird nicht zwischen Profis und Amateuren unterschieden, so dass sich Vertreter beider _Klassen_ in der Rangliste finden. Da auch Senioren neben ihren Seniorenrennen auch bei Rennen der Amateuren startberechtigt sind, kommen auch die mit in die Rangliste sobald sie sich bei einem Amateurrennen platziert haben. Sogar Junioren, die mit einer Sondergenehmigung bei solchen Rennen an den Start gehen dürfen, können dann bei entsprechender Platzierung in die Rangliste kommen.
@@ -70,116 +74,34 @@ Das ist es auch, wenn es darum geht welche Rennen in der <span style="font-weigh
 </aside>
 
 
-<iframe width="100%" height="850" name="iframe" src="/html/Amateur_Rangliste_2019.html"></iframe>
+Mit framewidget
+Das plotly-Objekt _plotA_ mit width 800 und height 600 aaa
 
-
-Plotly im Chunk
-
-
-```{r include=FALSE}
-library(tidyverse)
-library(plotly)
-library(widgetframe)
-top20_df <- readRDS('top20_df.rds')
-whatyouwant <- readRDS('whatyouwand.rds')
-ax <- list(
-  title = "",
-  zeroline = FALSE,
-  showline = FALSE,
-  ticktext = list('0', '500', '1000'), 
-  tickvals = list(0, 500, 1000),
-  range = c(-500, 1200),
-  tickmode = "array"
-  #showticklabels = FALSE,
-  #showgrid = FALSE
-)
-
-ay <- list(
-  title = "",
-  zeroline = FALSE,
-  showline = FALSE,
-  showticklabels = FALSE,
-  showgrid = FALSE,
-  autorange = 'reversed'
-)
-
-plotA <- top20_df %>% 
-  select(-c(Verein, c, RankInWeek, ordering, newOrder)) %>% 
-  group_by(week) %>% arrange(desc(SumInWeek)) %>% 
-  #filter(week == 40) %>% 
-  mutate(Rank = dense_rank(SumInWeek)) %>% 
-  mutate(text_df = ifelse(SumInWeek > 100, as.character(SumInWeek), '')) %>% 
-  mutate(team_df = ifelse(week == 40, Team, '')) %>% 
-  mutate(rangfolge = 1:20) %>% 
-  ungroup() %>% 
-  plot_ly(x = 0, xend = ~SumInWeek, frame = ~week,
-          color = ~Team, colors = whatyouwant,
-          showlegend = F, hoverinfo = 'none',
-          text = ~Name, text2 = ~SumInWeek,
-          width = 800, height = 750
-  ) %>% 
-  add_segments(y = ~rangfolge, yend = ~rangfolge, inherit = T, 
-               hoverinfo = 'none',
-               line = list(width =22)) %>% 
-  add_text(x = -450, y = ~rangfolge, inherit = T, 
-           #textposition = 'right',
-           ) %>% 
-  add_text(x = ~-45, y = ~rangfolge, inherit = F, 
-           hoverinfo ='none',
-           text = ~rangfolge, frame = ~week,
-           ) %>% 
-  add_text(x = ~SumInWeek - 80, y = ~rangfolge, inherit = T, 
-           hoverinfo = 'none',
-           text = ~text_df, textfont = list(
-            color = toRGB("white")
-           )
-           ) %>% 
-  add_text(x = ~10, y = ~rangfolge, inherit = T, 
-           hoverinfo = 'none',
-           text = ~team_df, textfont = list(
-            color = toRGB("white"),
-            size = 12
-           )
-           ) %>% 
-  layout(margin = list(l = 50, r = 20, b = 200, t = 30),
-         yaxis = ay, xaxis = ax,
-         annotations = 
-           list(x = .9, y = -.3, #position of text adjust as needed 
-                text = "@ mb`s", 
-                showarrow = F, xref='paper', yref='paper', 
-                xanchor='left', yanchor='auto', xshift=0, yshift=0,
-                font=list(size=10, color="gray"))) %>% 
-  animation_opts( 
-    frame = 1000,
-    transition = 750,
-    easing = "linear-in", redraw = T
-  ) %>% 
-  style(textposition = "right") %>% 
-  layout(title= paste('<b>', 'Amateur Rangliste 2019' ,'</b>'), font=t) %>% 
-  animation_slider(currentvalue = list(prefix = "Woche: ", font=list(color ='black'))) %>% 
-  config(displayModeBar = F)
-```
-
-```{r fig.width = 5}
-frameWidget(plotA,height = 1200, width = '90%')
+```{r, width = 600, height = 900, warning=F}
+plotA <- readRDS('plotA.rds')
+frameWidget(plotA,height = 850, width = '100%')
 
 ```
 
 
+Versuch mit pym.js
 
-<iframe width="100%" height="850" name="iframe" src="/html/Top20_plot_ly.html"></iframe>
+Speichern als frameableWidget 
 
-<iframe width="100%" height="800" name="iframe" src="/html/WochenInTopX_Fahrer.html"></iframe>
+```{r warning=F}
+htmlwidgets::saveWidget(
+  widgetframe::frameableWidget(plotA),'frameablePlotA.html')
+```
+
+und jetzt als pym.js in einem div einlesen [](http://blog.apps.npr.org/pym.js/)
+
+<div id="example"></div>
+<script type="text/javascript" src="https://pym.nprapps.org/pym.v1.min.js"></script>
+<script>
+    var pymParent = new pym.Parent('example', 'frameablePlotA.html', {});
+</script>
 
 
-<iframe width='100%' height='1000' src='https://marblo.shinyapps.io/RL_III/' allowfullscreen></iframe> 
+<!-- <iframe width='100%' height='1000' src='https://marblo.shinyapps.io/RL_III/' allowfullscreen></iframe>  -->
 
-Nisi nostrud ad velit excepteur minim ea eu mollit ullamco Lorem voluptate ea. Tempor non do amet reprehenderit duis. Minim in excepteur occaecat in Lorem velit sunt. Esse minim nostrud ut culpa veniam cupidatat quis ea reprehenderit velit.
-
-<iframe width='100%' height='1000' src='/html/DT_Veranstaltungen_2019.html' allowfullscreen></iframe>
-
-
-
-<iframe width='40%' height='1000' src='/html/Balken_Woche_Fahrer.html' allowfullscreen></iframe> 
-
-<iframe width='40%' height='1000' src='/html/Balken_Woche_Fahrer.html' allowfullscreen onload="resizeIframe(this)></iframe> 
+ 

@@ -2,7 +2,7 @@
 title: 'Rangliste Amateure 2019'
 author: Martin
 date: '2020-01-10'
-draft: false
+draft: true
 slug: amateurradsport-radsport-rangliste-amateure
 categories:
   - bicycling
@@ -34,9 +34,6 @@ aside {
 }
 
 </style>
-<pre class="r"><code>knitr::opts_chunk$set(comment = NA, tidy = FALSE, warning = FALSE, message = FALSE,
-                      echo = TRUE, widgetframe_isolate_widgets = TRUE,
-                      fig.width=6, fig.height=10)</code></pre>
 <div id="wo-sind-die-bilder" class="section level1">
 <h1>Wo sind die Bilder?</h1>
 <p>Für Eilige: Hier geht es zu den Diagrammen, Animationen und interaktiven Plots</p>
@@ -60,24 +57,21 @@ aside {
 <aside>
 Eventuell weiter nach unten scrollen. <strong>Play</strong> - Button drücken oder <strong>Schieberegler</strong> verwenden.
 </aside>
-<iframe width="100%" height="850" name="iframe" src="/html/Amateur_Rangliste_2019.html">
-</iframe>
-<p>Plotly im Chunk</p>
-<pre class="r"><code>frameWidget(plotA,height = 1200, width = &#39;90%&#39;)</code></pre>
-<div id="htmlwidget-1" style="width:90%;height:1200px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-1">{"x":{"url":"/blog/2020-01-10-check-second-blogpost-rangliste-amateure_files/figure-html//widgets/widget_unnamed-chunk-2.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
-<iframe width="100%" height="850" name="iframe" src="/html/Top20_plot_ly.html">
-</iframe>
-<iframe width="100%" height="800" name="iframe" src="/html/WochenInTopX_Fahrer.html">
-</iframe>
-<iframe width="100%" height="1000" src="https://marblo.shinyapps.io/RL_III/" allowfullscreen>
-</iframe>
-<p>Nisi nostrud ad velit excepteur minim ea eu mollit ullamco Lorem voluptate ea. Tempor non do amet reprehenderit duis. Minim in excepteur occaecat in Lorem velit sunt. Esse minim nostrud ut culpa veniam cupidatat quis ea reprehenderit velit.</p>
-<iframe width="100%" height="1000" src="/html/DT_Veranstaltungen_2019.html" allowfullscreen>
-</iframe>
-<iframe width="40%" height="1000" src="/html/Balken_Woche_Fahrer.html" allowfullscreen>
-</iframe>
-<p>&lt;iframe width=‘40%’ height=‘1000’ src=‘/html/Balken_Woche_Fahrer.html’ allowfullscreen onload="resizeIframe(this)&gt;</iframe></p>
+<p>Mit framewidget
+Das plotly-Objekt <em>plotA</em> mit width 800 und height 600 aaa</p>
+<div id="htmlwidget-1" style="width:100%;height:850px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1">{"x":{"url":"/blog/2020-01-10-check-second-blogpost-rangliste-amateure_files/figure-html//widgets/widget_unnamed-chunk-1.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<p>Versuch mit pym.js</p>
+<p>Speichern als frameableWidget</p>
+<p>und jetzt als pym.js in einem div einlesen <a href="http://blog.apps.npr.org/pym.js/"></a></p>
+<div id="example">
+
+</div>
+<script type="text/javascript" src="https://pym.nprapps.org/pym.v1.min.js"></script>
+<script>
+    var pymParent = new pym.Parent('example', 'frameablePlotA.html', {});
+</script>
+<!-- <iframe width='100%' height='1000' src='https://marblo.shinyapps.io/RL_III/' allowfullscreen></iframe>  -->
 </div>
 </div>
 <div class="footnotes">
