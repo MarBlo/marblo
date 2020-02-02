@@ -6,10 +6,19 @@
     <description>Recent content on mb`s</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 26 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 02 Feb 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Rangliste Amateure 2019</title>
+      <link>/blog/amateurradsport-radsport-rangliste-amateure/</link>
+      <pubDate>Sun, 02 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/amateurradsport-radsport-rangliste-amateure/</guid>
+      <description>#responsive-image { width: 50%; height: auto; } #fixed-width-flamingo { width: 500px; } aside { float: center; color: blue; max-width: 500px; font-size: 1ex; } .column-left{ float: left; width: 49%; text-align: left; } .column-right{ float: right; width: 49%; text-align: right; } /** ----------------------------------------------------- **/ /** --- 2 Columns, responsive, das funktioniert ------- **/ /** ----------------------------------------------------- **/ * { box-sizing: border-box; } /* Create two equal columns that floats next to each other */ .</description>
+    </item>
     
     <item>
       <title>Sublime, Markdown, Text, CSS und mehr</title>
@@ -29,16 +38,6 @@ Mit der Anleitung aus diesm Link habe ich ein deutsches Wörterbuch eingebaut. E
       <guid>/stm/how-to-add-interactive-plots-to-a-blog-post/</guid>
       <description>function resizeIframe(obj) { obj.style.height = obj.contentWindow.document.body.scrollHeight + &#39;px&#39;; }   Einiges gelernt zu Responsiveness und plot_ly Für den zweiten Post wollte ich einige interacktive Elemente wie zum Beispiel DT::dataframe() oder plot_ly bzw ggplotlyeinsetzen, und bin dabei auf einige Überraschungen gestoßen - habe aber auch extrem viel gelernt.
 Ausgangspunkt ist die phantastische Seite von Alison Presman Hills. Die Seite, aif der es um htmlwidgets geht, versuche ich im Folgenden nachzubauen.</description>
-    </item>
-    
-    <item>
-      <title>Rangliste Amateure 2019</title>
-      <link>/blog/amateurradsport-radsport-rangliste-amateure/</link>
-      <pubDate>Fri, 10 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/amateurradsport-radsport-rangliste-amateure/</guid>
-      <description>#responsive-image { width: 50%; height: auto; } #fixed-width-flamingo { width: 500px; } aside { float: right; color: blue; max-width: 500px; font-size: 1ex; }  Wo sind die Bilder? Für Eilige: Hier geht es zu den Diagrammen, Animationen und interaktiven Plots
- Animation Top20 Amateure bqjbq jdfbn   Die Amateur-Rangliste Die Rangliste des BDR umfasst alle Radrennfahrer mit einer deutschen Lizenz und bündelt der Ergebnisse eines Jahres in einer Rangliste.</description>
     </item>
     
     <item>

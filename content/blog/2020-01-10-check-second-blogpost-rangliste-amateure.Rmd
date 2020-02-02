@@ -1,8 +1,8 @@
 ---
 title: 'Rangliste Amateure 2019'
 author: Martin
-date: '2020-01-10'
-draft: true
+date: '2020-02-02'
+draft: false
 slug: amateurradsport-radsport-rangliste-amateure
 categories:
   - bicycling
@@ -22,11 +22,65 @@ type: post
 
 
 aside {
-    float: right;
+    float: center;
     color: blue;
     max-width: 500px;
     font-size: 1ex;
 }
+
+
+.column-left{
+  float: left;
+  width: 49%;
+  text-align: left;
+}
+
+.column-right{
+  float: right;
+  width: 49%;
+  text-align: right;
+}
+
+/** ----------------------------------------------------- **/
+/** --- 2 Columns, responsive, das funktioniert   ------- **/
+/** ----------------------------------------------------- **/
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 48%;
+  margin: 5px;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+.column-left{
+    width: 100%;
+  }
+}@media screen and (max-width: 600px) {
+.column-right{
+    width: 100%;
+  }
+}@media screen and (max-width: 600px) {
+  .column{
+    width: 100%;
+  }
+}
+
+/** ----------------------------------------------------- **/
+
 
 </style>
 
@@ -40,42 +94,73 @@ library(plotly)
 library(widgetframe)
 ```
 
+# Die Amateur-Rangliste
+
 # Wo sind die Bilder?
 
 Für Eilige: Hier geht es zu den Diagrammen, Animationen und interaktiven Plots
 
++ [Rennen 2019](#rennen)
 + [Animation Top20 Amateure](#Top20)
-+ bqjbq
-+ jdfbn
++ [Amateure: Rang und Punkte](#shiny)
++ [Saisonverlauf Top20 Amateure](#saison)
 
 
+Die Rangliste des BDR (Bund Deutscher Radfahrer) umfasst alle Radrennfahrer mit einer deutschen Lizenz und bündelt die Ergebnisse eines Jahres in einer Rangliste. Dabei wird nicht zwischen Profis und Amateuren unterschieden, so dass sich Vertreter beider _Klassen_ in der Rangliste finden. Da Senioren neben ihren Seniorenrennen auch bei Rennen der Amateure startberechtigt sind, kommen sie mit in die Rangliste sobald sie sich bei einem Amateurrennen platziert haben. Sogar Junioren, die mit einer Sondergenehmigung bei solchen Rennen an den Start gehen dürfen, können dann bei entsprechender Platzierung in die Rangliste kommen.
 
-    
-# Die Amateur-Rangliste
+Profis, Senioren und Junioren haben alle neben der o.g. Rangliste ihre eigene Rangliste.
 
-Die Rangliste des BDR umfasst alle Radrennfahrer mit einer deutschen Lizenz und bündelt der Ergebnisse eines Jahres in einer Rangliste. Dabei wird nicht zwischen Profis und Amateuren unterschieden, so dass sich Vertreter beider _Klassen_ in der Rangliste finden. Da auch Senioren neben ihren Seniorenrennen auch bei Rennen der Amateuren startberechtigt sind, kommen auch die mit in die Rangliste sobald sie sich bei einem Amateurrennen platziert haben. Sogar Junioren, die mit einer Sondergenehmigung bei solchen Rennen an den Start gehen dürfen, können dann bei entsprechender Platzierung in die Rangliste kommen.
-
-Profis, Senioren und Junioren haben alle neben der o.g. Rangliste ihre eigene Rangliste, die für sich sogar ausschlaggebender ist. 
-
-Es liegt also eigentlich nahe, dafür zu sorgen, dass die einzigen Fahrer, die sich im Laufe einer Saison einem Wettbewerb um Auf- oder Abstieg kümmern müssen, eine eigene Rangliste erhalten. Deshalb wird hier im Folgenden eine soche **Amateur-Rangliste** erstellt und in verschiedenen Formen ausgewertet.
+Es liegt also eigentlich nahe, dafür zu sorgen, dass die einzigen Fahrer, die sich im Laufe einer Saison einem Wettbewerb um Auf- oder Abstieg stellen müssen, eine eigene Rangliste erhalten. Deshalb wird hier im Folgenden eine solche **Amateur-Rangliste** erstellt und in verschiedenen Formen ausgewertet.
 
 Das Vorhaben ist damit klar, das Vorgehen nicht unbedingt. Die Frage wer Amateur ist und wer Profi ist noch einfach zu beantworten. Die Frage, ob ein Senior oder Junior bei der Amateur-Rangliste mit berücksichtigt werden soll oder nicht, schon nicht mehr. Beide messen sich in den Rennen mit Amateuren und sind noch sehr aktive Rennfahrer, die _nur_ ihres Alters wegen Seniorenrennen fahren dürfen, oft aber auch noch wettbewerbsfähig bei Amateurrennen sind. Dass diese Seniorenfahrer mit in die Rangliste aufgenommen werden, ist also zu vertreten. 
 
-Bei den Junioren - von denen es wohl deutlich weniger Fahrer gibt, die mit einer Sondergenehmigung bei Amateurrennen starten dürfen, als es Senioren gibt, die das tun - kann man auch damit leben, dass die noch in der Rangliste ausgeführt werden, zumal sie ein Jahr später sowieso bei den Amateuren starten werden^[Man kann mit einer ähnlichen Argumentation natürlich auch sagen, dass die Profis sich auch in Rennen mit den Amateuren messen und damit in der Rangliste geführt werden sollen. Aber irgendwo muss ein Schnitt gemacht werden und der wird, was die die einzelnen Rennklassen angeht im Folgenden zwischen Profis (PT bis zu KT) auf der einen Seite und Amateuren (inklusive einiger Senioren und Junioren) auf der anderen Seite gemacht.].
+Bei den Junioren - von denen es wohl deutlich weniger Fahrer gibt, die mit einer Sondergenehmigung bei Amateurrennen starten dürfen, als es Senioren gibt, die das tun - kann man auch damit leben, dass sie noch in der Rangliste aufgeführt werden, zumal sie ein Jahr später sowieso bei den Amateuren starten werden^[Man kann mit einer ähnlichen Argumentation natürlich auch sagen, dass die Profis sich auch in Rennen mit den Amateuren messen und damit in der Rangliste geführt werden sollen. Aber irgendwo muss ein Schnitt gemacht werden und der wird, was die die einzelnen Rennklassen angeht im Folgenden zwischen Profis (PT bis zu KT) auf der einen Seite und Amateuren (inklusive einiger Senioren und Junioren) auf der anderen Seite gemacht.].
 
 Es ist also etwas _Geschmackssache_.
 
-Das ist es auch, wenn es darum geht welche Rennen in der <span style="font-weight:bold; font-size: 1.2em;">Amateur-Rangliste</span> berücksichtigt werden soll. 
+## Rennen 2019 {#rennen}
+
+Das ist es auch, wenn es darum geht welche Rennen in der <span style="font-weight:bold; font-size: 1.2em;">Amateur-Rangliste</span> berücksichtigt werden sollen. Um die Auswahl eindeutig zu machen, werden im Folgenden nur vom BDR ausgeschriebene Rennen in der <span style="font-weight:bold; font-size: 1.2em;">Amateur-Rangliste</span> betrachtet. Damit werden zwar die von Amateuren gefahrenen Rennen zum Beispiel in Nordafrika oder Indonesien nicht berücksichtigt. Aber damit ist dann ein fairer Vergleich des Leistungsvermögens möglich.
+
+
+```{r}
+alleRennen2019 <- readRDS('../../static/data/alleRennen2019.rds')
+```
+
+<div class=column-left>
+Man kommt so auf 
+`r alleRennen2019 %>% group_by(Ort) %>% tally() %>% tally()` Rennen, die an `r length(unique(alleRennen2019$Ort))` Orten stattgefunden haben. Diese `r alleRennen2019 %>% group_by(Ort) %>% tally() %>% tally()` Rennen sind in sehr unterschiedlichem Maße bestritten worden. Die überwiegende Art von Rennen, waren solche der Kategorien 6.3, 6.4 und 6.5. Eine Besonderheit stellen die Rennen der Kategorie 4 dar, die nicht oft ausgeschrieben sind, aber durchaus für einzelne Fahrer wie ein Punktesegen wirken. Das wird an einem späteren Punkt noch einmal deutlich. 
+</div>
+
+<div class = "column-right"> 
+
+  ```{r, message=FALSE, echo=FALSE}
+    alleRennen2019 %>% group_by(Kategorie) %>% tally() %>%
+       plot_ly(x = ~Kategorie, showlegend = F, height = 400, width = 400) %>%
+    add_trace(y = ~n, type = 'bar') %>% 
+       layout(
+         xaxis = list(title = '', tickangle = 45),
+         yaxis = list(title = 'Anz. Rennen pro Kategorie')
+       ) %>% config(displayModeBar = F)
+  ```
+</div>
+
+<br>
+Die folgende Tabelle listet noch einmal alle Rennen auf, die in der <span style="font-weight:bold; font-size: 1.2em;">Amateur-Rangliste</span> ausgewertet wurden. _In der Tabelle kann über das Suchfeld oben rechts gesucht werden._ 
+<br>
+
+```{r fig.height = 6}
+frameWidget(DT::datatable(alleRennen2019))
+``` 
+
 
 ## Die Top20 Amateure {#Top20}
 
-<aside>
-	Eventuell weiter nach unten scrollen. **Play** - Button drücken oder **Schieberegler** verwenden.
-</aside>
+Die neue <span style="font-weight:bold; font-size: 1.2em;">Amateur-Rangliste</span> konzentriert sich nur auf die Amateure - _Profis, auch KT-Profis sind nicht in der Rangliste_. Das bedeutet aber nicht, dass die Punkteverteilung bei den Rennen, bei denen KT-Profis startberechtigt waren und in die Punkteränge gefahren sind, verändert wurde. Die Rangliste ordnet kontinuierlich die pro Woche eingefahrenen Punkte jedes Amateurs, der die oben gezeigten Rennen gefahren ist, neu ein und erlaubt einen Blick in die Rangliste zu jedem Zeitpunkt (Woche) des Rennjahres.
 
+Die Animation zeigt für die Fahrer, die am Ende der Saison unter den <span style="font-weight:bold; font-size: 1.2em;">Top20</span> der Rangliste sind, deren Punktestand in der jeweiligen Woche als Balkendiagramm und deren Position in der Rangliste.
 
-Mit framewidget
-Das plotly-Objekt _plotA_ mit width 800 und height 600 aaa
+<br>
 
 ```{r, width = 600, height = 900, warning=F}
 plotA <- readRDS('plotA.rds')
@@ -84,24 +169,32 @@ frameWidget(plotA,height = 850, width = '100%')
 ```
 
 
-Versuch mit pym.js
+## Amateure: Rang und Punkte {#shiny}
 
-Speichern als frameableWidget 
+In der folgenden Darstellung kann man für alle Amateure den Verlauf seines Ranglistenplatzes und seines Punktestands über das Jahr sehen. Dazu sind in der Tabelle alle Amateure gelistet. Durch Anklicken der entsprechenden Zeile für einen Fahrer, wird für ihn jeweils eine Kurve eingeblendet, die seinen Ranglistenplatz und Punktestand im Laufe der Saison zeigt. 
 
-```{r warning=F}
-htmlwidgets::saveWidget(
-  widgetframe::frameableWidget(plotA),'frameablePlotA.html')
-```
+Vorab angewählt sind die 3 <span style="font-weight:bold; font-size: 1.2em;">Top20</span>-Fahrer des **Team Möbel Ehrmann** . 
+<aside>Im Desktop-Format wird _Ranglistenplatz_ links und _Punktestand_ rechts angezeigt; im Mobile-Format _Ranglistenplatz_ oben und _Punktestand_ unten. </aside>
 
-und jetzt als pym.js in einem div einlesen [](http://blog.apps.npr.org/pym.js/)
-
-<div id="example"></div>
-<script type="text/javascript" src="https://pym.nprapps.org/pym.v1.min.js"></script>
-<script>
-    var pymParent = new pym.Parent('example', 'frameablePlotA.html', {});
-</script>
+_In der Tabelle kann nach den Begriffen Name des Fahrers, Team oder Verein gesucht werden. Durch Anklicken der Zeile können Fahrer an- oder abgewählt werden. Für die angewählten Fahrer kann durch leichtes Antippen der Kurve weitere Informationen zu den Fahrern angezeigt werden. Oben rechts in den Diagrammen gibt es die Möglichkeit in das Diagramm zu zoomen oder die Spannweiten der Achsen zu verändern. In den Originalzustand bringt man das Ganze wieder durch Doppelklicken in das Diagramm oder durch Anklicken des HOME-Buttons im jeweiligen Plot oben rechts._
 
 
-<!-- <iframe width='100%' height='1000' src='https://marblo.shinyapps.io/RL_III/' allowfullscreen></iframe>  -->
+<iframe width='100%' height='1500' src='https://marblo.shinyapps.io/RL_III/' allowfullscreen></iframe>
 
  
+## Saisonverlauf Top20 Amateure {#saison}
+
+Interessant ist natürlich auch die Frage, bei welchen Rennen die Fahrer - vor allem die **Top20**-Fahrer ihre Punkte holen. Eine genauere Analyse bleibt einem späteren Post vorbehalten. Aber das folgende Diagramm zeigt für die die <span style="font-weight:bold; font-size: 1.2em;">Top20</span>-Fahrer wieviele Punkte sie in der jeweiligen Woche gesammelt haben. _Das Diagramm zeigt die Fahrer in 2 Spalten. Dabei entspricht der Ranglistenplatz der Lesefolge. Die Skala kann sich in den einzelnen Reihen unterscheiden, da sich sich pro Reihe an dem höchsten Balken der beiden Fahrer ausrichtet. Auch hier kann man durch Berühren des Balkens weitere Infos zu dem Rennen und gemachten Punkten pro Fahrer erhalten._
+
+Ein Blick über diese Diagramme zeigt einige _herausragende_ Daten. So ist die Kalenderwoche 25 irgendwie auffällig, da es fort bei einigen Fahrern die meisten Punkte zu verzeichnen gibt. Oben wurde schon einmal auf die Bedeutung von Rennen mit der Kategorie **4.x** hingewiesen. In dieser Woche fand zum Beispiel das Rennen oder besser die Rennserie in **Haigerloch** statt und es einigen Fahrern in der Woche gelungen, um die 150 Punkte zu sammeln. 
+
+Andere Fahrer - wie zum Beispiel **Paul Lindenau** - haben es geschafft, in einer Woche <span style="font-weight:bold; font-size: 1.2em;">3 Rennen</span> zu gewinnen (KW 23).
+
+<br>
+
+```{r}
+plots <- readRDS('../../static/data/plots.rds')
+frameWidget(subplot(plots, nrows =10, shareX = TRUE, shareY = TRUE, margin = 0.01), height = 1200, width = '100%')
+```
+
+Ein Blick auf diese Plots läßt vielleicht sogar eine gewisse Periodisierung im Saisonverlauf erkennen. Wobei ich mir aber ziemlich sicher bin, dass der eher durch eine Auszeit (Urlaub, Studium) verursacht ist, als durch eine trainingstechnische Unterbrechung der gefahrenen Rennen - dafür fahren die meisten Amateure, die unter den <span style="font-weight:bold; font-size: 1.2em;">Top20</span> sind, einfach zu gerne Rennen.
