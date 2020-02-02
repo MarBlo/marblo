@@ -6,10 +6,19 @@
     <description>Recent content in bicycling on mb`s</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 28 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 02 Feb 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/bicycling/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Rangliste II</title>
+      <link>/apps/apprangliste_ii/</link>
+      <pubDate>Sun, 02 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/apps/apprangliste_ii/</guid>
+      <description> </description>
+    </item>
     
     <item>
       <title>Amateurradsport ist mehr ...</title>
