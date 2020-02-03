@@ -9,7 +9,7 @@ categories:
   - bicycling
 tags:
   - bicycling
-featured: rankingKopie.jpg
+featured: ranking Kopie.jpg
 featuredalt: ranking
 featuredpath: date
 featuredalt: ''

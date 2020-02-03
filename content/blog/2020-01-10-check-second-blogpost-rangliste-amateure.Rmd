@@ -114,7 +114,7 @@ Es liegt also eigentlich nahe, dafür zu sorgen, dass die einzigen Fahrer, die s
 
 Das Vorhaben ist damit klar, das Vorgehen nicht unbedingt. Die Frage wer Amateur ist und wer Profi ist noch einfach zu beantworten. Die Frage, ob ein Senior oder Junior bei der Amateur-Rangliste mit berücksichtigt werden soll oder nicht, schon nicht mehr. Beide messen sich in den Rennen mit Amateuren und sind noch sehr aktive Rennfahrer, die _nur_ ihres Alters wegen Seniorenrennen fahren dürfen, oft aber auch noch wettbewerbsfähig bei Amateurrennen sind. Dass diese Seniorenfahrer mit in die Rangliste aufgenommen werden, ist also zu vertreten. 
 
-Bei den Junioren - von denen es wohl deutlich weniger Fahrer gibt, die mit einer Sondergenehmigung bei Amateurrennen starten dürfen, als es Senioren gibt, die das tun - kann man auch damit leben, dass sie noch in der Rangliste aufgeführt werden, zumal sie ein Jahr später sowieso bei den Amateuren starten werden^[Man kann mit einer ähnlichen Argumentation natürlich auch sagen, dass die Profis sich auch in Rennen mit den Amateuren messen und damit in der Rangliste geführt werden sollen. Aber irgendwo muss ein Schnitt gemacht werden und der wird, was die die einzelnen Rennklassen angeht im Folgenden zwischen Profis (PT bis zu KT) auf der einen Seite und Amateuren (inklusive einiger Senioren und Junioren) auf der anderen Seite gemacht.].
+Bei den Junioren - von denen es wohl deutlich weniger Fahrer gibt, die mit einer Sondergenehmigung bei Amateurrennen starten dürfen, als es Senioren gibt, die das tun - kann man auch damit leben, dass sie noch in der Rangliste aufgeführt werden, zumal sie ein Jahr später sowieso bei den Amateuren starten werden^[Man kann mit einer ähnlichen Argumentation natürlich auch sagen, dass die Profis sich auch in Rennen mit den Amateuren messen und damit in der Rangliste geführt werden sollen. Aber irgendwo muss ein Schnitt gemacht werden und der wird, was die einzelnen Rennklassen angeht, im Folgenden zwischen Profis (PT bis zu KT) auf der einen Seite und Amateuren (inklusive einiger Senioren und Junioren) auf der anderen Seite gemacht.].
 
 Es ist also etwas _Geschmackssache_.
 
@@ -163,7 +163,7 @@ Die Animation zeigt für die Fahrer, die am Ende der Saison unter den <span styl
 <br>
 
 ```{r, width = 600, height = 900, warning=F}
-plotA <- readRDS('plotA.rds')
+plotA <- readRDS('../../static/data/plotA.rds')
 frameWidget(plotA,height = 850, width = '100%')
 
 ```
@@ -184,9 +184,9 @@ _In der Tabelle kann nach den Begriffen Name des Fahrers, Team oder Verein gesuc
  
 ## Saisonverlauf Top20 Amateure {#saison}
 
-Interessant ist natürlich auch die Frage, bei welchen Rennen die Fahrer - vor allem die **Top20**-Fahrer ihre Punkte holen. Eine genauere Analyse bleibt einem späteren Post vorbehalten. Aber das folgende Diagramm zeigt für die die <span style="font-weight:bold; font-size: 1.2em;">Top20</span>-Fahrer wieviele Punkte sie in der jeweiligen Woche gesammelt haben. _Das Diagramm zeigt die Fahrer in 2 Spalten. Dabei entspricht der Ranglistenplatz der Lesefolge. Die Skala kann sich in den einzelnen Reihen unterscheiden, da sich sich pro Reihe an dem höchsten Balken der beiden Fahrer ausrichtet. Auch hier kann man durch Berühren des Balkens weitere Infos zu dem Rennen und gemachten Punkten pro Fahrer erhalten._
+Interessant ist natürlich auch die Frage, bei welchen Rennen die Fahrer - vor allem die **Top20**-Fahrer ihre Punkte holen. Eine genauere Analyse bleibt einem späteren Post vorbehalten. Aber das folgende Diagramm zeigt für die <span style="font-weight:bold; font-size: 1.2em;">Top20</span>-Fahrer wieviele Punkte sie in der jeweiligen Woche gesammelt haben. _Das Diagramm zeigt die Fahrer in 2 Spalten. Dabei entspricht der Ranglistenplatz der Lesefolge. Die Skala kann sich in den einzelnen Reihen unterscheiden, da sie sich pro Reihe an dem höchsten Balken der beiden Fahrer ausrichtet. Auch hier kann man durch Berühren des Balkens weitere Infos zu dem Rennen und gemachten Punkten pro Fahrer erhalten._
 
-Ein Blick über diese Diagramme zeigt einige _herausragende_ Daten. So ist die Kalenderwoche 25 irgendwie auffällig, da es fort bei einigen Fahrern die meisten Punkte zu verzeichnen gibt. Oben wurde schon einmal auf die Bedeutung von Rennen mit der Kategorie **4.x** hingewiesen. In dieser Woche fand zum Beispiel das Rennen oder besser die Rennserie in **Haigerloch** statt und es einigen Fahrern in der Woche gelungen, um die 150 Punkte zu sammeln. 
+Ein Blick über diese Diagramme zeigt einige _herausragende_ Daten. So ist die Kalenderwoche 25 irgendwie auffällig, da es dort bei einigen Fahrern die meisten Punkte zu verzeichnen gibt. Oben wurde schon einmal auf die Bedeutung von Rennen mit der Kategorie **4.x** hingewiesen. In dieser Woche fand zum Beispiel das Rennen oder besser die Rennserie in **Haigerloch** statt und es ist einigen Fahrern in der Woche gelungen, um die 150 Punkte zu sammeln. 
 
 Andere Fahrer - wie zum Beispiel **Paul Lindenau** - haben es geschafft, in einer Woche <span style="font-weight:bold; font-size: 1.2em;">3 Rennen</span> zu gewinnen (KW 23).
 

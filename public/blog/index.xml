@@ -29,41 +29,5 @@
       <description>#responsive-image { width: 50%; height: auto; } #fixed-width-flamingo { width: 500px; } aside { float: right; color: blue; } .grid { display: grid; grid-gap: 10px; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); } .griddiv:first-child { grid-column: span 1; }   function resizeIframe(obj) { obj.style.height = obj.contentWindow.document.body.scrollHeight + &#39;px&#39;; }  &amp;hellip; als was? Im Gegensatz zu fast allen Amateursportarten ist der von Amateuren betriebene Strassenradsport zu einem beträchtlichen Teil aus dem Blickwinkel des allgemein Sportinteressierten verschwunden.</description>
     </item>
     
-    <item>
-      <title></title>
-      <link>/blog/amateur_rangliste_2019/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/amateur_rangliste_2019/</guid>
-      <description>(function() { // If window.HTMLWidgets is already defined, then use it; otherwise create a // new object. This allows preceding code to set options that affect the // initialization process (though none currently exist). window.HTMLWidgets = window.HTMLWidgets || {}; // See if we&#39;re running in a viewer pane. If not, we&#39;re in a web browser. var viewerMode = window.HTMLWidgets.viewerMode = /\bviewer_pane=1\b/.test(window.location); // See if we&#39;re running in Shiny mode.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/blog/frameableplota/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/frameableplota/</guid>
-      <description>plotly (function() { // If window.HTMLWidgets is already defined, then use it; otherwise create a // new object. This allows preceding code to set options that affect the // initialization process (though none currently exist). window.HTMLWidgets = window.HTMLWidgets || {}; // See if we&#39;re running in a viewer pane. If not, we&#39;re in a web browser. var viewerMode = window.HTMLWidgets.viewerMode = /\bviewer_pane=1\b/.test(window.location); // See if we&#39;re running in Shiny mode.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/blog/plota/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/plota/</guid>
-      <description>plotly (function() { // If window.HTMLWidgets is already defined, then use it; otherwise create a // new object. This allows preceding code to set options that affect the // initialization process (though none currently exist). window.HTMLWidgets = window.HTMLWidgets || {}; // See if we&#39;re running in a viewer pane. If not, we&#39;re in a web browser. var viewerMode = window.HTMLWidgets.viewerMode = /\bviewer_pane=1\b/.test(window.location); // See if we&#39;re running in Shiny mode.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/blog/top20_plot_ly/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/top20_plot_ly/</guid>
-      <description>plotly  (function() { // If window.HTMLWidgets is already defined, then use it; otherwise create a // new object. This allows preceding code to set options that affect the // initialization process (though none currently exist). window.HTMLWidgets = window.HTMLWidgets || {}; // See if we&#39;re running in a viewer pane. If not, we&#39;re in a web browser. var viewerMode = window.HTMLWidgets.viewerMode = /\bviewer_pane=1\b/.test(window.location); // See if we&#39;re running in Shiny mode.</description>
-    </item>
-    
   </channel>
 </rss>

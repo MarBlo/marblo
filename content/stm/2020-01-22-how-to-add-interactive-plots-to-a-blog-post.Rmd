@@ -288,7 +288,7 @@ DT::datatable() kann man mit einem _iframe_ gut einbinden. Das funktioniert, all
 Das funktioniert !!
 
 ```{r}
-alleRennen2019 <- readRDS('alleRennen2019.rds')
+alleRennen2019 <- readRDS('../../static/data/alleRennen2019.rds')
 frameWidget(DT::datatable(alleRennen2019))
 ```
 

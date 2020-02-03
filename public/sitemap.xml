@@ -8,12 +8,12 @@
   </url>
   
   <url>
-    <loc>/categories/bicycling/</loc>
+    <loc>/tags/bicycling/</loc>
     <lastmod>2020-02-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/bicycling/</loc>
+    <loc>/categories/bicycling/</loc>
     <lastmod>2020-02-02T00:00:00+00:00</lastmod>
   </url>
   
@@ -160,26 +160,6 @@
   <url>
     <loc>/itemized/item1/</loc>
     <lastmod>2017-06-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/amateur_rangliste_2019/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/blog/frameableplota/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/blog/plota/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/blog/top20_plot_ly/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
